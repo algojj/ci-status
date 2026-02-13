@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-13 20:16:31",
+  "timestamp": "2026-02-13 20:54:44",
   "total": 57,
   "counts": {
     "failure": 1,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 52
+    "success": 51
   },
   "repos": [
     {
@@ -31,13 +31,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22006123475",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22006904203",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-13 20:16",
+      "commit_date": "2026-02-13 20:54",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22006852509",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-13 20:51",
+      "duration": "3s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "signal-executor",
@@ -609,21 +624,6 @@
       "commit_date": "2026-02-13 09:39",
       "duration": "1m 15s",
       "workflow": "CI"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22005806640",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-13 20:02",
-      "duration": "5m 28s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
