@@ -145,6 +145,18 @@ def generate_html(data, counts, timestamp):
             duration = r.get("duration", "")
             branch = r.get("branch", "")
 
+        # Build copy-to-clipboard text for failed/non-success items
+        copy_btn = ""
+        if r["status_key"] in ("failure", "cancelled") and r.get("run_url"):
+            copy_text = (
+                f'El pipeline "{r.get("workflow", "")}" fallo en el repo algojj/{r["name"]}, '
+                f'branch: {r.get("branch", "?")}, '
+                f'commit: "{r.get("commit_msg", "")}" ({r.get("commit_date", "")}). '
+                f'Run: {r.get("run_url", "")} — '
+                f'Por favor revisa los logs del workflow y decime que paso.'
+            ).replace("'", "\\'").replace('"', "&quot;")
+            copy_btn = f'<button class="copy-btn" onclick="copyText(this, &quot;{copy_text}&quot;)" title="Copy for Claude Code">📋</button>'
+
         rows += f"""
         <tr class="status-{status_class}">
             <td class="status-cell"><span class="status-icon">{r["status_icon"]}</span> {r["status_label"]}</td>
@@ -152,7 +164,7 @@ def generate_html(data, counts, timestamp):
             <td class="branch-cell">{branch}</td>
             <td class="commit-cell">{commit_info}</td>
             <td class="duration-cell">{duration}</td>
-            <td class="action-cell">{run_link}</td>
+            <td class="action-cell">{run_link} {copy_btn}</td>
         </tr>"""
 
     html = f"""<!DOCTYPE html>
@@ -297,7 +309,20 @@ tr:hover {{ background: #161b2288; }}
     font-size: 12px;
     white-space: nowrap;
 }}
-.action-cell {{ white-space: nowrap; }}
+.action-cell {{ white-space: nowrap; display: flex; align-items: center; gap: 6px; }}
+.copy-btn {{
+    background: none;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 3px 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #8b949e;
+    transition: all 0.2s;
+    line-height: 1;
+}}
+.copy-btn:hover {{ background: #21262d; border-color: #58a6ff; }}
+.copy-btn.copied {{ border-color: #3fb950; }}
 @media (max-width: 768px) {{
     .header {{ padding: 16px; }}
     .container {{ padding: 12px; }}
@@ -347,6 +372,15 @@ tr:hover {{ background: #161b2288; }}
 </tbody>
 </table>
 </div>
+<script>
+function copyText(btn, text) {{
+    navigator.clipboard.writeText(text).then(function() {{
+        btn.textContent = '✅';
+        btn.classList.add('copied');
+        setTimeout(function() {{ btn.textContent = '📋'; btn.classList.remove('copied'); }}, 2000);
+    }});
+}}
+</script>
 </body>
 </html>"""
     return html
