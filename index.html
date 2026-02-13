@@ -1,1 +1,650 @@
-<h1>Dashboard loading...</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CI Status — algojj</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+    background: #0d1117;
+    color: #c9d1d9;
+    min-height: 100vh;
+}
+.header {
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    padding: 20px 24px;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f0f6fc;
+}
+.title span { color: #58a6ff; }
+.health-badge {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background: #f4433622;
+    color: #f44336;
+    border: 1px solid #f4433644;
+}
+.stats {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+.stat {
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    background: #21262d;
+    border: 1px solid #30363d;
+}
+.stat-total { color: #8b949e; }
+.stat-pass { color: #3fb950; }
+.stat-fail { color: #f85149; }
+.stat-run { color: #d29922; }
+.stat-noci { color: #8b949e; }
+.timestamp {
+    font-size: 12px;
+    color: #8b949e;
+    margin-top: 8px;
+}
+.container {
+    padding: 16px 24px;
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+th {
+    text-align: left;
+    padding: 10px 12px;
+    background: #161b22;
+    border-bottom: 2px solid #30363d;
+    color: #8b949e;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #21262d;
+    vertical-align: middle;
+}
+tr:hover { background: #161b2288; }
+.status-cell {
+    white-space: nowrap;
+    font-weight: 600;
+    min-width: 110px;
+}
+.status-icon { font-size: 16px; }
+.status-failure .status-cell { color: #f85149; }
+.status-success .status-cell { color: #3fb950; }
+.status-running .status-cell { color: #d29922; }
+.status-no_ci .status-cell { color: #8b949e; }
+.status-cancelled .status-cell { color: #8b949e; }
+.status-failure { background: #f8514908; }
+.repo-link {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.repo-link:hover { text-decoration: underline; }
+.run-link {
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 3px 8px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+.run-link:hover { background: #21262d; color: #58a6ff; border-color: #58a6ff; }
+.branch-cell {
+    color: #7ee787;
+    font-family: monospace;
+    font-size: 12px;
+}
+.commit-cell { max-width: 300px; }
+.commit-msg {
+    color: #c9d1d9;
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.commit-date { color: #8b949e; font-size: 11px; }
+.duration-cell {
+    color: #8b949e;
+    font-family: monospace;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.action-cell { white-space: nowrap; }
+@media (max-width: 768px) {
+    .header { padding: 16px; }
+    .container { padding: 12px; }
+    .branch-cell, .duration-cell { display: none; }
+    .commit-cell { max-width: 160px; }
+    table { font-size: 13px; }
+    td, th { padding: 8px 6px; }
+    .stats { gap: 8px; }
+    .stat { font-size: 12px; padding: 3px 8px; }
+}
+@media (max-width: 480px) {
+    .commit-cell { display: none; }
+    .title { font-size: 18px; }
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <div class="header-top">
+        <div class="title">⚡ <span>algojj</span> CI Status</div>
+        <div class="health-badge">7 FAILING</div>
+    </div>
+    <div class="stats">
+        <span class="stat stat-total">57 repos</span>
+        <span class="stat stat-pass">✅ 46 passing</span>
+        <span class="stat stat-fail">❌ 7 failing</span>
+        <span class="stat stat-run">🔄 1 running</span>
+        <span class="stat stat-noci">⚠️ 2 sin CI</span>
+        <span class='stat stat-noci'>⏹️ 1 other</span>
+    </div>
+    <div class="timestamp">Last updated: 2026-02-13 10:47:14 (Argentina) — Refreshes every 15 min (Mon-Fri 8am-9pm ART)</div>
+</div>
+<div class="container">
+<table>
+<thead>
+    <tr>
+        <th>Status</th>
+        <th>Repository</th>
+        <th>Branch</th>
+        <th>Last Commit</th>
+        <th>Duration</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/STRAT-015" target="_blank" class="repo-link">STRAT-015</a>  🔒</td>
+            <td class="branch-cell">v1.0.1</td>
+            <td class="commit-cell"><span class="commit-msg">v1.0.1 - Retry deploy with GH_PAT fix</span><br><span class="commit-date">2026-02-13 09:40</span></td>
+            <td class="duration-cell">7m 4s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/STRAT-015/actions/runs/21987181432" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/STRAT-029" target="_blank" class="repo-link">STRAT-029</a>  🔒</td>
+            <td class="branch-cell">v1.0.1</td>
+            <td class="commit-cell"><span class="commit-msg">v1.0.1 - Retry deploy with GH_PAT fix</span><br><span class="commit-date">2026-02-13 09:40</span></td>
+            <td class="duration-cell">3m 59s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/STRAT-029/actions/runs/21987181968" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/STRAT-034" target="_blank" class="repo-link">STRAT-034</a>  🔒</td>
+            <td class="branch-cell">v1.0.1</td>
+            <td class="commit-cell"><span class="commit-msg">v1.0.1 - Retry deploy with GH_PAT fix</span><br><span class="commit-date">2026-02-13 09:40</span></td>
+            <td class="duration-cell">10m 57s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/STRAT-034/actions/runs/21987182409" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/sc-infra" target="_blank" class="repo-link">sc-infra</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">🔬 DilutionTracker Scraper</span><br><span class="commit-date">2026-02-07 03:00</span></td>
+            <td class="duration-cell">27m 37s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-infra/actions/runs/21775331938" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/sc-ms-mcp" target="_blank" class="repo-link">sc-ms-mcp</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1h 20m</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-mcp/actions/runs/21985235012" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/sc-ops" target="_blank" class="repo-link">sc-ops</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">Flash Research Scraper</span><br><span class="commit-date">2026-02-13 03:33</span></td>
+            <td class="duration-cell">1m 8s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ops/actions/runs/21977232117" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-failure">
+            <td class="status-cell"><span class="status-icon">❌</span> Failing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-postmarket" target="_blank" class="repo-link">sc-scanner-postmarket</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">18s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-postmarket/actions/runs/21985238260" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-running">
+            <td class="status-cell"><span class="status-icon">🔄</span> Running</td>
+            <td><a href="https://github.com/algojj/ci-status" target="_blank" class="repo-link">ci-status</a></td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">CI Status Dashboard</span><br><span class="commit-date">2026-02-13 10:46</span></td>
+            <td class="duration-cell">4s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/ci-status/actions/runs/21989129740" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-cancelled">
+            <td class="status-cell"><span class="status-icon">⏹️</span> Cancelled</td>
+            <td><a href="https://github.com/algojj/signal-executor" target="_blank" class="repo-link">signal-executor</a>  🔒</td>
+            <td class="branch-cell">v2.2.0</td>
+            <td class="commit-cell"><span class="commit-msg">perf: dashboard loads in ~5s instead of ~35s</span><br><span class="commit-date">2026-02-13 08:12</span></td>
+            <td class="duration-cell">1m 32s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/signal-executor/actions/runs/21984732599" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-no_ci">
+            <td class="status-cell"><span class="status-icon">⚠️</span> Sin CI</td>
+            <td><a href="https://github.com/algojj/sc-database" target="_blank" class="repo-link">sc-database</a>  🔒</td>
+            <td class="branch-cell"></td>
+            <td class="commit-cell"></td>
+            <td class="duration-cell"></td>
+            <td class="action-cell"></td>
+        </tr>
+        <tr class="status-no_ci">
+            <td class="status-cell"><span class="status-icon">⚠️</span> Sin CI</td>
+            <td><a href="https://github.com/algojj/sc-workflows" target="_blank" class="repo-link">sc-workflows</a></td>
+            <td class="branch-cell"></td>
+            <td class="commit-cell"></td>
+            <td class="duration-cell"></td>
+            <td class="action-cell"></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/STRAT-018" target="_blank" class="repo-link">STRAT-018</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">Deploy</span><br><span class="commit-date">2026-02-10 12:24</span></td>
+            <td class="duration-cell">1m 53s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/STRAT-018/actions/runs/21870944436" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/STRAT-030" target="_blank" class="repo-link">STRAT-030</a>  🔒</td>
+            <td class="branch-cell">v1.0.2</td>
+            <td class="commit-cell"><span class="commit-msg">v1.0.2 - Fix signal bridge default URL</span><br><span class="commit-date">2026-02-10 01:59</span></td>
+            <td class="duration-cell">2m 21s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/STRAT-030/actions/runs/21852344290" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/demo-repository" target="_blank" class="repo-link">demo-repository</a>  🔒</td>
+            <td class="branch-cell">add-badges-to-readme</td>
+            <td class="commit-cell"><span class="commit-msg">Initial commit</span><br><span class="commit-date">2026-02-07 01:53</span></td>
+            <td class="duration-cell">18s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/demo-repository/actions/runs/21774501479" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-algo-bht" target="_blank" class="repo-link">sc-algo-bht</a>  🔒</td>
+            <td class="branch-cell">v3.27.3</td>
+            <td class="commit-cell"><span class="commit-msg">v3.27.3 — REST confirmation for WS SL/TP (block anomalous exchange trades)</span><br><span class="commit-date">2026-02-13 10:32</span></td>
+            <td class="duration-cell">1m 39s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-algo-bht/actions/runs/21988691912" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-algo-climax" target="_blank" class="repo-link">sc-algo-climax</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 22s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-algo-climax/actions/runs/21985239887" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-algo-early-bird-short" target="_blank" class="repo-link">sc-algo-early-bird-short</a>  🔒</td>
+            <td class="branch-cell">v1.3.0</td>
+            <td class="commit-cell"><span class="commit-msg">v1.3.0 - Fix GHCR auth + empty watchlist retry</span><br><span class="commit-date">2026-02-13 08:31</span></td>
+            <td class="duration-cell">1m 28s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-algo-early-bird-short/actions/runs/21985257557" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-algo-gus" target="_blank" class="repo-link">sc-algo-gus</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">Deploy</span><br><span class="commit-date">2026-02-10 13:40</span></td>
+            <td class="duration-cell">5m 21s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-algo-gus/actions/runs/21873747380" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-algo-mfl" target="_blank" class="repo-link">sc-algo-mfl</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 16s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-algo-mfl/actions/runs/21985240915" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-gateway" target="_blank" class="repo-link">sc-gateway</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 55s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-gateway/actions/runs/21985233828" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-alerts" target="_blank" class="repo-link">sc-ms-alerts</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 5s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-alerts/actions/runs/21985231944" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-brief" target="_blank" class="repo-link">sc-ms-brief</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 5s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-brief/actions/runs/21985236477" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-database" target="_blank" class="repo-link">sc-ms-database</a>  🔒</td>
+            <td class="branch-cell">v3.25.0</td>
+            <td class="commit-cell"><span class="commit-msg">v3.25.0 - Pipeline Test</span><br><span class="commit-date">2026-02-07 02:19</span></td>
+            <td class="duration-cell">18m 40s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-database/actions/runs/21774821434" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-dd" target="_blank" class="repo-link">sc-ms-dd</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 24s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-dd/actions/runs/21985232795" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-extended" target="_blank" class="repo-link">sc-ms-extended</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">51s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-extended/actions/runs/21987164021" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-flash" target="_blank" class="repo-link">sc-ms-flash</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 56s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-flash/actions/runs/21985233546" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-health" target="_blank" class="repo-link">sc-ms-health</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">55s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-health/actions/runs/21987164119" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-intelligence" target="_blank" class="repo-link">sc-ms-intelligence</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">1m 2s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-intelligence/actions/runs/21987164401" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-jobs" target="_blank" class="repo-link">sc-ms-jobs</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">52s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-jobs/actions/runs/21987165001" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-metadata" target="_blank" class="repo-link">sc-ms-metadata</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 29s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-metadata/actions/runs/21985235434" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-midday" target="_blank" class="repo-link">sc-ms-midday</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">Deploy</span><br><span class="commit-date">2026-02-10 13:40</span></td>
+            <td class="duration-cell">3m 55s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-midday/actions/runs/21873746232" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-news" target="_blank" class="repo-link">sc-ms-news</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 12s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-news/actions/runs/21985235719" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-opening" target="_blank" class="repo-link">sc-ms-opening</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">55s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-opening/actions/runs/21985235942" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-playbook" target="_blank" class="repo-link">sc-ms-playbook</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">56s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-playbook/actions/runs/21987165434" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-polygon" target="_blank" class="repo-link">sc-ms-polygon</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 7s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-polygon/actions/runs/21985236204" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-report" target="_blank" class="repo-link">sc-ms-report</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">54s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-report/actions/runs/21985232445" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-spike" target="_blank" class="repo-link">sc-ms-spike</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 21s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-spike/actions/runs/21985238981" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-statistics" target="_blank" class="repo-link">sc-ms-statistics</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 9s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-statistics/actions/runs/21985239444" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-telegram" target="_blank" class="repo-link">sc-ms-telegram</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 16s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-telegram/actions/runs/21985241097" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-volume-analytics" target="_blank" class="repo-link">sc-ms-volume-analytics</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 13s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-volume-analytics/actions/runs/21985241579" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-volume-spikes" target="_blank" class="repo-link">sc-ms-volume-spikes</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">1m 12s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-volume-spikes/actions/runs/21987165413" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-volume-stats" target="_blank" class="repo-link">sc-ms-volume-stats</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">52s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-volume-stats/actions/runs/21987165862" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ms-watchlist" target="_blank" class="repo-link">sc-ms-watchlist</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">ci: add workflow_dispatch trigger</span><br><span class="commit-date">2026-02-13 09:39</span></td>
+            <td class="duration-cell">1m 15s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ms-watchlist/actions/runs/21987166031" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-polygon-proxy" target="_blank" class="repo-link">sc-polygon-proxy</a>  🔒</td>
+            <td class="branch-cell">v1.1.1</td>
+            <td class="commit-cell"><span class="commit-msg">v1.1.1 - Discord Alerts & Health Fix</span><br><span class="commit-date">2026-02-11 04:24</span></td>
+            <td class="duration-cell">1m 12s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-polygon-proxy/actions/runs/21896289364" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-afterhours" target="_blank" class="repo-link">sc-scanner-afterhours</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">54s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-afterhours/actions/runs/21985236674" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-breakout" target="_blank" class="repo-link">sc-scanner-breakout</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">49s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-breakout/actions/runs/21985237063" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-gap" target="_blank" class="repo-link">sc-scanner-gap</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">51s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-gap/actions/runs/21985237338" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-gapfade" target="_blank" class="repo-link">sc-scanner-gapfade</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">51s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-gapfade/actions/runs/21985237557" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-momentum" target="_blank" class="repo-link">sc-scanner-momentum</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">48s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-momentum/actions/runs/21985237790" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-multiday" target="_blank" class="repo-link">sc-scanner-multiday</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">Deploy</span><br><span class="commit-date">2026-02-10 13:47</span></td>
+            <td class="duration-cell">2m 9s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-multiday/actions/runs/21874018051" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-premarket" target="_blank" class="repo-link">sc-scanner-premarket</a>  🔒</td>
+            <td class="branch-cell">v3.27.0</td>
+            <td class="commit-cell"><span class="commit-msg">v3.27.0 - Fix entry timing: 10:01 H5-confirmed only</span><br><span class="commit-date">2026-02-11 19:40</span></td>
+            <td class="duration-cell">2m 5s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-premarket/actions/runs/21925894633" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-scanner-swing" target="_blank" class="repo-link">sc-scanner-swing</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 0s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-scanner-swing/actions/runs/21985238512" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-shared" target="_blank" class="repo-link">sc-shared</a></td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">feat: add StrategySignalDispatcher for user webhook integration (v1.2.0)</span><br><span class="commit-date">2026-02-06 18:59</span></td>
+            <td class="duration-cell">24s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-shared/actions/runs/21767392417" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-ticker-router" target="_blank" class="repo-link">sc-ticker-router</a>  🔒</td>
+            <td class="branch-cell">main</td>
+            <td class="commit-cell"><span class="commit-msg">fix: use GH_PAT for GHCR authentication</span><br><span class="commit-date">2026-02-13 08:30</span></td>
+            <td class="duration-cell">1m 21s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-ticker-router/actions/runs/21985241406" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-web" target="_blank" class="repo-link">sc-web</a>  🔒</td>
+            <td class="branch-cell">v3.27.0</td>
+            <td class="commit-cell"><span class="commit-msg">v3.27.0</span><br><span class="commit-date">2026-02-13 08:11</span></td>
+            <td class="duration-cell">1m 25s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-web/actions/runs/21984680157" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-webhooks" target="_blank" class="repo-link">sc-webhooks</a>  🔒</td>
+            <td class="branch-cell">v3.25.4</td>
+            <td class="commit-cell"><span class="commit-msg">v3.25.4 - Remove auto-disable from health monitor</span><br><span class="commit-date">2026-02-13 10:08</span></td>
+            <td class="duration-cell">1m 18s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-webhooks/actions/runs/21987990451" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+        <tr class="status-success">
+            <td class="status-cell"><span class="status-icon">✅</span> Passing</td>
+            <td><a href="https://github.com/algojj/sc-websocket-broadcast" target="_blank" class="repo-link">sc-websocket-broadcast</a>  🔒</td>
+            <td class="branch-cell">v1.0.2</td>
+            <td class="commit-cell"><span class="commit-msg">v1.0.2 - Fix GHCR auth</span><br><span class="commit-date">2026-02-13 09:42</span></td>
+            <td class="duration-cell">10m 28s</td>
+            <td class="action-cell"><a href="https://github.com/algojj/sc-websocket-broadcast/actions/runs/21987232043" target="_blank" class="run-link">View Run</a></td>
+        </tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
