@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-13 10:47:14",
+  "timestamp": "2026-02-13 11:49:29",
   "total": 57,
   "counts": {
-    "failure": 7,
+    "failure": 6,
     "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 46
+    "success": 47
   },
   "repos": [
     {
@@ -85,21 +85,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21977232117",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-13 03:33",
-      "duration": "1m 8s",
-      "workflow": "Flash Research Scraper"
-    },
-    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -121,12 +106,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/21989129740",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/21991127571",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-13 10:46",
-      "duration": "4s",
+      "commit_date": "2026-02-13 11:48",
+      "duration": "6s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -136,11 +121,11 @@
       "status_key": "cancelled",
       "status_label": "Cancelled",
       "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/21984732599",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/21989216126",
       "run_name": "Release",
       "branch": "v2.2.0",
-      "commit_msg": "perf: dashboard loads in ~5s instead of ~35s",
-      "commit_date": "2026-02-13 08:12",
+      "commit_msg": "fix: subscribe to Polygon WS for PENDING_ORDER positions",
+      "commit_date": "2026-02-13 10:49",
       "duration": "1m 32s",
       "workflow": "Release"
     },
@@ -639,6 +624,21 @@
       "commit_date": "2026-02-13 09:39",
       "duration": "1m 15s",
       "workflow": "CI"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21989636819",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-13 11:03",
+      "duration": "27m 51s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-polygon-proxy",
