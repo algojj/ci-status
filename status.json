@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-13 15:27:10",
+  "timestamp": "2026-02-13 16:26:37",
   "total": 57,
   "counts": {
-    "failure": 5,
-    "running": 1,
+    "failure": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 48
+    "success": 51
   },
   "repos": [
     {
@@ -25,79 +25,34 @@
       "workflow": "\ud83d\udd2c DilutionTracker Scraper"
     },
     {
-      "name": "sc-ms-mcp",
-      "url": "https://github.com/algojj/sc-ms-mcp",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-mcp/actions/runs/21985235012",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "fix: use GH_PAT for GHCR authentication",
-      "commit_date": "2026-02-13 08:30",
-      "duration": "1h 20m",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21997410938",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-13 15:03",
-      "duration": "35s",
-      "workflow": "Flash Research Scraper"
-    },
-    {
-      "name": "sc-scanner-postmarket",
-      "url": "https://github.com/algojj/sc-scanner-postmarket",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-scanner-postmarket/actions/runs/21985238260",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "fix: use GH_PAT for GHCR authentication",
-      "commit_date": "2026-02-13 08:30",
-      "duration": "18s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-scanner-premarket",
-      "url": "https://github.com/algojj/sc-scanner-premarket",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/21996302329",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-13 14:28",
-      "duration": "6m 29s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/21998117424",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/21999900451",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-13 15:26",
+      "commit_date": "2026-02-13 16:26",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21999857636",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-13 16:24",
+      "duration": "0s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "signal-executor",
@@ -446,6 +401,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ms-mcp",
+      "url": "https://github.com/algojj/sc-ms-mcp",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-mcp/actions/runs/21998575095",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "fix: free disk space before Docker build and install shared lib for t\u2026",
+      "commit_date": "2026-02-13 15:41",
+      "duration": "12m 29s",
+      "workflow": "CI"
+    },
+    {
       "name": "sc-ms-metadata",
       "url": "https://github.com/algojj/sc-ms-metadata",
       "private": true,
@@ -758,6 +728,36 @@
       "commit_msg": "v3.25.2 - trade persistence",
       "commit_date": "2026-02-13 14:29",
       "duration": "14m 33s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-scanner-postmarket",
+      "url": "https://github.com/algojj/sc-scanner-postmarket",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-scanner-postmarket/actions/runs/21998729942",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "fix: align test_price_too_low with MIN_PRICE=0.20",
+      "commit_date": "2026-02-13 15:46",
+      "duration": "1m 4s",
+      "workflow": "CI"
+    },
+    {
+      "name": "sc-scanner-premarket",
+      "url": "https://github.com/algojj/sc-scanner-premarket",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/21999545953",
+      "run_name": "Deploy",
+      "branch": "main",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-02-13 16:14",
+      "duration": "1m 53s",
       "workflow": "Deploy"
     },
     {
