@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-13 15:02:36",
+  "timestamp": "2026-02-13 15:27:10",
   "total": 57,
   "counts": {
-    "failure": 4,
-    "running": 2,
+    "failure": 5,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
     "success": 48
@@ -38,6 +38,21 @@
       "commit_date": "2026-02-13 08:30",
       "duration": "1h 20m",
       "workflow": "CI"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21997410938",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-13 15:03",
+      "duration": "35s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-scanner-postmarket",
@@ -76,28 +91,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/21997356196",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/21998117424",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-13 15:02",
-      "duration": "6s",
+      "commit_date": "2026-02-13 15:26",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/21997363391",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-13 15:02",
-      "duration": "3s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "signal-executor",
@@ -106,12 +106,12 @@
       "status_key": "cancelled",
       "status_label": "Cancelled",
       "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/21996322010",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/21997371241",
       "run_name": "Release",
-      "branch": "v2.3.0",
-      "commit_msg": "feat: emergency FLATTEN for runaway positions + dashboard improvements",
-      "commit_date": "2026-02-13 14:28",
-      "duration": "1m 22s",
+      "branch": "v2.3.1",
+      "commit_msg": "feat: show DAS API call counter on dashboard",
+      "commit_date": "2026-02-13 15:02",
+      "duration": "1m 12s",
       "workflow": "Release"
     },
     {
