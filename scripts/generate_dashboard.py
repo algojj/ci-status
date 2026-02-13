@@ -3,6 +3,7 @@ CI Status Dashboard Generator
 Queries all repos in algojj org, gets latest workflow status, generates static HTML.
 """
 
+import html as html_mod
 import json
 import os
 import sys
@@ -154,8 +155,9 @@ def generate_html(data, counts, timestamp):
                 f'commit: "{r.get("commit_msg", "")}" ({r.get("commit_date", "")}). '
                 f'Run: {r.get("run_url", "")} — '
                 f'Por favor revisa los logs del workflow y decime que paso.'
-            ).replace("'", "\\'").replace('"', "&quot;")
-            copy_btn = f'<button class="copy-btn" onclick="copyText(this, &quot;{copy_text}&quot;)" title="Copy for Claude Code">📋</button>'
+            )
+            safe_text = html_mod.escape(copy_text, quote=True)
+            copy_btn = f'<button class="copy-btn" data-copy="{safe_text}" title="Copy for Claude Code">📋</button>'
 
         rows += f"""
         <tr class="status-{status_class}">
@@ -373,13 +375,16 @@ tr:hover {{ background: #161b2288; }}
 </table>
 </div>
 <script>
-function copyText(btn, text) {{
-    navigator.clipboard.writeText(text).then(function() {{
-        btn.textContent = '✅';
-        btn.classList.add('copied');
-        setTimeout(function() {{ btn.textContent = '📋'; btn.classList.remove('copied'); }}, 2000);
+document.querySelectorAll('.copy-btn').forEach(function(btn) {{
+    btn.addEventListener('click', function() {{
+        var text = this.getAttribute('data-copy');
+        navigator.clipboard.writeText(text).then(function() {{
+            btn.textContent = '✅';
+            btn.classList.add('copied');
+            setTimeout(function() {{ btn.textContent = '📋'; btn.classList.remove('copied'); }}, 2000);
+        }});
     }});
-}}
+}});
 </script>
 </body>
 </html>"""
