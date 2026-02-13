@@ -1,0 +1,58 @@
+name: CI Status Dashboard
+
+on:
+  schedule:
+    # Every 15 min, Mon-Fri, 11:00-23:45 UTC (08:00-20:45 Argentina)
+    - cron: '*/15 11-23 * * 1-5'
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  generate-dashboard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate dashboard
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+          ORG_NAME: algojj
+        run: python scripts/generate_dashboard.py
+
+      - name: Deploy to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Switch to gh-pages (create if needed)
+          git fetch origin gh-pages 2>/dev/null || true
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf . 2>/dev/null || true
+          fi
+
+          # Copy generated files
+          cp /tmp/dashboard/index.html .
+          cp /tmp/dashboard/status.json . 2>/dev/null || true
+
+          # Commit and push
+          git add index.html status.json 2>/dev/null
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to deploy"
+          else
+            git commit -m "Update dashboard $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push origin gh-pages
+          fi
