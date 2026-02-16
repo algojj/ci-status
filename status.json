@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16 20:04:16",
+  "timestamp": "2026-02-16 20:46:33",
   "total": 57,
   "counts": {
     "failure": 1,
-    "running": 1,
+    "running": 2,
     "no_ci": 2,
-    "success": 53
+    "success": 52
   },
   "repos": [
     {
@@ -30,13 +30,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22080047971",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22080872877",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 20:03",
-      "duration": "4s",
+      "commit_date": "2026-02-16 20:46",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22080621470",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-16 20:32",
+      "duration": "3s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-database",
@@ -331,13 +346,13 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/21987164119",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: add workflow_dispatch trigger",
-      "commit_date": "2026-02-13 09:39",
-      "duration": "55s",
-      "workflow": "CI"
+      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22080165929",
+      "run_name": "Deploy",
+      "branch": "v3.22.2",
+      "commit_msg": "v3.22.2 \u2014 Exclude polygon-stream-b from monitoring",
+      "commit_date": "2026-02-16 20:09",
+      "duration": "1m 1s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-intelligence",
@@ -481,13 +496,13 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-report/actions/runs/21985232445",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "fix: use GH_PAT for GHCR authentication",
-      "commit_date": "2026-02-13 08:30",
-      "duration": "54s",
-      "workflow": "CI"
+      "run_url": "https://github.com/algojj/sc-ms-report/actions/runs/22080469008",
+      "run_name": "Deploy",
+      "branch": "v3.22.3",
+      "commit_msg": "v3.22.3 \u2014 Fix deploy pipeline for CronJob",
+      "commit_date": "2026-02-16 20:24",
+      "duration": "56s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-spike",
@@ -593,21 +608,6 @@
       "commit_date": "2026-02-13 09:39",
       "duration": "1m 15s",
       "workflow": "CI"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22079891979",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-16 19:56",
-      "duration": "5m 34s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
