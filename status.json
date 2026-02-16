@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16 17:38:44",
+  "timestamp": "2026-02-16 18:03:44",
   "total": 57,
   "counts": {
     "failure": 1,
-    "running": 2,
+    "running": 1,
     "no_ci": 2,
-    "success": 52
+    "success": 53
   },
   "repos": [
     {
@@ -30,28 +30,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22076863221",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22077428680",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 17:38",
+      "commit_date": "2026-02-16 18:03",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22076795175",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 17:35",
-      "duration": "2s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-database",
@@ -608,6 +593,21 @@
       "commit_date": "2026-02-13 09:39",
       "duration": "1m 15s",
       "workflow": "CI"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22077270305",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-16 17:56",
+      "duration": "5m 46s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
