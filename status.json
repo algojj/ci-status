@@ -1,12 +1,11 @@
 {
-  "timestamp": "2026-02-16 12:48:15",
+  "timestamp": "2026-02-16 13:54:16",
   "total": 57,
   "counts": {
     "failure": 1,
     "running": 1,
-    "cancelled": 1,
     "no_ci": 2,
-    "success": 52
+    "success": 53
   },
   "repos": [
     {
@@ -31,28 +30,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22069196249",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22071247235",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 12:47",
-      "duration": "5s",
+      "commit_date": "2026-02-16 13:53",
+      "duration": "6s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "signal-executor",
-      "url": "https://github.com/algojj/signal-executor",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22069025065",
-      "run_name": "Release",
-      "branch": "v2.3.3",
-      "commit_msg": "fix: add cancel-and-verify protection to handleInactiveOrder",
-      "commit_date": "2026-02-16 12:42",
-      "duration": "1m 19s",
-      "workflow": "Release"
     },
     {
       "name": "sc-database",
@@ -617,12 +601,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22067895511",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22069795915",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 12:08",
-      "duration": "29m 2s",
+      "commit_date": "2026-02-16 13:06",
+      "duration": "29m 28s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -849,6 +833,21 @@
       "commit_date": "2026-02-13 09:42",
       "duration": "10m 28s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "signal-executor",
+      "url": "https://github.com/algojj/signal-executor",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22070783526",
+      "run_name": "Release",
+      "branch": "v2.3.7",
+      "commit_msg": "fix: use net.JoinHostPort for IPv6-safe DAS TCP connections",
+      "commit_date": "2026-02-16 13:38",
+      "duration": "2m 39s",
+      "workflow": "Release"
     }
   ]
 }
