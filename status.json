@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-16 16:12:03",
+  "timestamp": "2026-02-16 16:47:38",
   "total": 57,
   "counts": {
     "failure": 1,
-    "running": 2,
+    "running": 1,
     "no_ci": 2,
-    "success": 52
+    "success": 53
   },
   "repos": [
     {
@@ -30,28 +30,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22074803636",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22075660710",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 16:11",
-      "duration": "15s",
+      "commit_date": "2026-02-16 16:47",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22074783547",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 16:10",
-      "duration": "2s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-database",
@@ -226,12 +211,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/21996305332",
+      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22074879257",
       "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-13 14:28",
-      "duration": "7m 21s",
+      "branch": "v3.25.1",
+      "commit_msg": "v3.25.1 \u2014 Fix: trades never created (cooldown blocked BREAKOUT)",
+      "commit_date": "2026-02-16 16:14",
+      "duration": "26m 41s",
       "workflow": "Deploy"
     },
     {
@@ -610,6 +595,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22074783547",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-16 16:10",
+      "duration": "29m 25s",
+      "workflow": "Flash Research Scraper"
+    },
+    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -841,12 +841,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22070783526",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22075058995",
       "run_name": "Release",
-      "branch": "v2.3.7",
-      "commit_msg": "fix: use net.JoinHostPort for IPv6-safe DAS TCP connections",
-      "commit_date": "2026-02-16 13:38",
-      "duration": "2m 39s",
+      "branch": "v2.3.8",
+      "commit_msg": "fix: use America/New_York instead of hardcoded UTC-5 in dashboard date",
+      "commit_date": "2026-02-16 16:22",
+      "duration": "2m 32s",
       "workflow": "Release"
     }
   ]
