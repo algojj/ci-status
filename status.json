@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16 18:46:25",
+  "timestamp": "2026-02-16 19:35:38",
   "total": 57,
   "counts": {
     "failure": 1,
@@ -30,11 +30,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22078401558",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22079470023",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 18:46",
+      "commit_date": "2026-02-16 19:35",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
@@ -45,11 +45,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22078097321",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22079407932",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 18:32",
+      "commit_date": "2026-02-16 19:32",
       "duration": "3s",
       "workflow": "Flash Research Scraper"
     },
@@ -421,12 +421,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/21873746232",
+      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/22079146046",
       "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-10 13:40",
-      "duration": "3m 55s",
+      "branch": "v3.26.1",
+      "commit_msg": "v3.26.1 \u2014 Fix ABCD RTH filter",
+      "commit_date": "2026-02-16 19:19",
+      "duration": "1m 32s",
       "workflow": "Deploy"
     },
     {
