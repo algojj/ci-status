@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16 11:49:59",
+  "timestamp": "2026-02-16 12:48:15",
   "total": 57,
   "counts": {
     "failure": 1,
@@ -31,11 +31,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22067258610",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22069196249",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 11:49",
+      "commit_date": "2026-02-16 12:47",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -46,12 +46,12 @@
       "status_key": "cancelled",
       "status_label": "Cancelled",
       "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/21997371241",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22069025065",
       "run_name": "Release",
-      "branch": "v2.3.1",
-      "commit_msg": "feat: show DAS API call counter on dashboard",
-      "commit_date": "2026-02-13 15:02",
-      "duration": "1m 12s",
+      "branch": "v2.3.3",
+      "commit_msg": "fix: add cancel-and-verify protection to handleInactiveOrder",
+      "commit_date": "2026-02-16 12:42",
+      "duration": "1m 19s",
       "workflow": "Release"
     },
     {
@@ -617,12 +617,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22065812257",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22067895511",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 11:06",
-      "duration": "28m 40s",
+      "commit_date": "2026-02-16 12:08",
+      "duration": "29m 2s",
       "workflow": "Flash Research Scraper"
     },
     {
