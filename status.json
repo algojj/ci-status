@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-16 15:24:06",
+  "timestamp": "2026-02-16 16:12:03",
   "total": 57,
   "counts": {
     "failure": 1,
@@ -30,12 +30,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22073654176",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22074803636",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-16 15:23",
-      "duration": "5s",
+      "commit_date": "2026-02-16 16:11",
+      "duration": "15s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -45,12 +45,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22073123493",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22074783547",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-16 15:03",
-      "duration": "3s",
+      "commit_date": "2026-02-16 16:10",
+      "duration": "2s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -166,12 +166,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/21996322123",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22074749949",
       "run_name": "Deploy",
-      "branch": "v3.27.4",
-      "commit_msg": "v3.27.4 - trade persistence",
-      "commit_date": "2026-02-13 14:28",
-      "duration": "1m 55s",
+      "branch": "v3.27.5",
+      "commit_msg": "v3.27.5 \u2014 Trading cutoff 18:00 ET",
+      "commit_date": "2026-02-16 16:09",
+      "duration": "1m 31s",
       "workflow": "Deploy"
     },
     {
