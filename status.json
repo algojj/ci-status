@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17 15:08:06",
+  "timestamp": "2026-02-17 16:16:27",
   "total": 57,
   "counts": {
     "failure": 43,
@@ -645,12 +645,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22107709158",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22111652832",
       "run_name": "Release",
-      "branch": "v2.6.3",
-      "commit_msg": "fix: cache REST price in WS price map to prevent SIN PRECIO errors",
-      "commit_date": "2026-02-17 13:58",
-      "duration": "6s",
+      "branch": "v2.8.0",
+      "commit_msg": "feat: dashboard auth token, strategy management UI, dynamic port/tunn\u2026",
+      "commit_date": "2026-02-17 15:58",
+      "duration": "5s",
       "workflow": "Release"
     },
     {
@@ -660,11 +660,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22109999654",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22112195323",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 15:07",
+      "commit_date": "2026-02-17 16:16",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -675,12 +675,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22109615613",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22111787153",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-17 14:55",
-      "duration": "4s",
+      "commit_date": "2026-02-17 16:02",
+      "duration": "3s",
       "workflow": "Flash Research Scraper"
     },
     {
