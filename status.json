@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17 16:16:27",
+  "timestamp": "2026-02-17 17:00:48",
   "total": 57,
   "counts": {
     "failure": 43,
@@ -645,11 +645,11 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22111652832",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22113176845",
       "run_name": "Release",
-      "branch": "v2.8.0",
-      "commit_msg": "feat: dashboard auth token, strategy management UI, dynamic port/tunn\u2026",
-      "commit_date": "2026-02-17 15:58",
+      "branch": "v2.10.0",
+      "commit_msg": "refactor: replace all emojis with ASCII-safe text markers, add deploy\u2026",
+      "commit_date": "2026-02-17 16:46",
       "duration": "5s",
       "workflow": "Release"
     },
@@ -660,12 +660,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22112195323",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22113621830",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 16:16",
-      "duration": "5s",
+      "commit_date": "2026-02-17 17:00",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -675,11 +675,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22111787153",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22113614865",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-17 16:02",
+      "commit_date": "2026-02-17 17:00",
       "duration": "3s",
       "workflow": "Flash Research Scraper"
     },
