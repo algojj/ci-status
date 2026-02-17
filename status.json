@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17 09:28:23",
+  "timestamp": "2026-02-17 10:49:27",
   "total": 57,
   "counts": {
     "failure": 3,
-    "running": 2,
+    "running": 1,
     "no_ci": 2,
-    "success": 50
+    "success": 51
   },
   "repos": [
     {
@@ -60,28 +60,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22098468878",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22100994856",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 09:28",
+      "commit_date": "2026-02-17 10:49",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "signal-executor",
-      "url": "https://github.com/algojj/signal-executor",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22098469208",
-      "run_name": "Release",
-      "branch": "v2.6.1",
-      "commit_msg": "fix: increase SLPRICEINQUIRE timeout from 2.8s to 8s for locate requests",
-      "commit_date": "2026-02-17 09:28",
-      "duration": "8s",
-      "workflow": "Release"
     },
     {
       "name": "sc-database",
@@ -848,6 +833,21 @@
       "commit_date": "2026-02-13 09:42",
       "duration": "10m 28s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "signal-executor",
+      "url": "https://github.com/algojj/signal-executor",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22098469208",
+      "run_name": "Release",
+      "branch": "v2.6.1",
+      "commit_msg": "fix: increase SLPRICEINQUIRE timeout from 2.8s to 8s for locate requests",
+      "commit_date": "2026-02-17 09:28",
+      "duration": "3m 6s",
+      "workflow": "Release"
     }
   ]
 }
