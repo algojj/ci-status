@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-17 19:15:39",
+  "timestamp": "2026-02-17 19:59:30",
   "total": 58,
   "counts": {
-    "failure": 44,
-    "running": 2,
+    "failure": 43,
+    "running": 3,
     "no_ci": 2,
     "success": 10
   },
@@ -81,21 +81,6 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "6s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-algo-super-para",
-      "url": "https://github.com/algojj/sc-algo-super-para",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22115377658",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "feat: Super Para scanner - LONG momentum screener v1.0.0",
-      "commit_date": "2026-02-17 17:56",
-      "duration": "5s",
       "workflow": "CI"
     },
     {
@@ -675,13 +660,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22117858764",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22119099515",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 19:15",
-      "duration": "3s",
+      "commit_date": "2026-02-17 19:58",
+      "duration": "8s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-algo-super-para",
+      "url": "https://github.com/algojj/sc-algo-super-para",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22119110601",
+      "run_name": "Deploy",
+      "branch": "main",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-02-17 19:59",
+      "duration": "3s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -690,13 +690,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22117222639",
-      "run_name": "Flash Research Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22119088254",
+      "run_name": "DilutionTracker Scraper",
       "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-17 18:54",
-      "duration": "3s",
-      "workflow": "Flash Research Scraper"
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-17 19:58",
+      "duration": "6s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-database",
