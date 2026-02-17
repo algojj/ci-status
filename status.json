@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17 10:49:27",
+  "timestamp": "2026-02-17 11:53:49",
   "total": 57,
   "counts": {
     "failure": 3,
@@ -24,21 +24,6 @@
       "workflow": "\ud83d\udd2c DilutionTracker Scraper"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22088019054",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-17 03:14",
-      "duration": "22m 6s",
-      "workflow": "Flash Research Scraper"
-    },
-    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -54,17 +39,32 @@
       "workflow": "Deploy"
     },
     {
+      "name": "signal-executor",
+      "url": "https://github.com/algojj/signal-executor",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22103008509",
+      "run_name": "Release",
+      "branch": "v2.6.2",
+      "commit_msg": "fix: resolve Bitwarden instance for Schwab before loading Polygon API\u2026",
+      "commit_date": "2026-02-17 11:46",
+      "duration": "6s",
+      "workflow": "Release"
+    },
+    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22100994856",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22103247327",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 10:49",
+      "commit_date": "2026-02-17 11:53",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -625,6 +625,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22101618136",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-17 11:07",
+      "duration": "30m 36s",
+      "workflow": "Flash Research Scraper"
+    },
+    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -833,21 +848,6 @@
       "commit_date": "2026-02-13 09:42",
       "duration": "10m 28s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "signal-executor",
-      "url": "https://github.com/algojj/signal-executor",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22098469208",
-      "run_name": "Release",
-      "branch": "v2.6.1",
-      "commit_msg": "fix: increase SLPRICEINQUIRE timeout from 2.8s to 8s for locate requests",
-      "commit_date": "2026-02-17 09:28",
-      "duration": "3m 6s",
-      "workflow": "Release"
     }
   ]
 }
