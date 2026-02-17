@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17 19:59:30",
+  "timestamp": "2026-02-17 20:39:24",
   "total": 58,
   "counts": {
     "failure": 43,
-    "running": 3,
+    "running": 2,
     "no_ci": 2,
-    "success": 10
+    "success": 11
   },
   "repos": [
     {
@@ -660,28 +660,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22119099515",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22120169409",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 19:58",
-      "duration": "8s",
+      "commit_date": "2026-02-17 20:38",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-algo-super-para",
-      "url": "https://github.com/algojj/sc-algo-super-para",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22119110601",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-17 19:59",
-      "duration": "3s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -690,12 +675,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22119088254",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22120080006",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-17 19:58",
-      "duration": "6s",
+      "commit_date": "2026-02-17 20:35",
+      "duration": "3s",
       "workflow": "DilutionTracker Scraper"
     },
     {
@@ -803,6 +788,21 @@
       "commit_date": "2026-02-07 01:53",
       "duration": "18s",
       "workflow": "Proof HTML"
+    },
+    {
+      "name": "sc-algo-super-para",
+      "url": "https://github.com/algojj/sc-algo-super-para",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22120039289",
+      "run_name": "Deploy",
+      "branch": "v1.0.1",
+      "commit_msg": "v1.0.1 - Fix: SHORT strategy (not LONG)",
+      "commit_date": "2026-02-17 20:33",
+      "duration": "57s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-database",
