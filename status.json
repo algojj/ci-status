@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17 14:10:36",
+  "timestamp": "2026-02-17 15:08:06",
   "total": 57,
   "counts": {
     "failure": 43,
-    "running": 1,
+    "running": 2,
     "no_ci": 2,
-    "success": 11
+    "success": 10
   },
   "repos": [
     {
@@ -660,13 +660,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22108108942",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22109999654",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 14:10",
-      "duration": "6s",
+      "commit_date": "2026-02-17 15:07",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22109615613",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-17 14:55",
+      "duration": "4s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-database",
@@ -803,21 +818,6 @@
       "commit_date": "2026-02-17 13:36",
       "duration": "27m 29s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22106720168",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-17 13:30",
-      "duration": "31m 7s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-shared",
