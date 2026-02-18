@@ -1,11 +1,12 @@
 {
-  "timestamp": "2026-02-18 17:59:06",
+  "timestamp": "2026-02-18 18:45:39",
   "total": 58,
   "counts": {
     "failure": 27,
     "running": 2,
+    "cancelled": 1,
     "no_ci": 2,
-    "success": 27
+    "success": 26
   },
   "repos": [
     {
@@ -420,12 +421,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22157358932",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22158877933",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 17:58",
-      "duration": "7s",
+      "commit_date": "2026-02-18 18:45",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -435,13 +436,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22156864580",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22158628092",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-18 17:42",
-      "duration": "6s",
+      "commit_date": "2026-02-18 18:37",
+      "duration": "3s",
       "workflow": "Flash Research Scraper"
+    },
+    {
+      "name": "sc-ms-flash",
+      "url": "https://github.com/algojj/sc-ms-flash",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22157865536",
+      "run_name": "Deploy",
+      "branch": "v3.22.4",
+      "commit_msg": "v3.22.4 - Fix no_wait scrape not running",
+      "commit_date": "2026-02-18 18:14",
+      "duration": "9m 55s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-database",
@@ -631,12 +647,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22156001722",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22157644144",
       "run_name": "Deploy",
-      "branch": "v3.26.1-fix",
-      "commit_msg": "v3.26.1 - Ticker page layout + news dates",
-      "commit_date": "2026-02-18 17:15",
-      "duration": "2m 4s",
+      "branch": "v3.26.5a",
+      "commit_msg": "v3.26.5 - Auto-trigger Flash Research scrape",
+      "commit_date": "2026-02-18 18:07",
+      "duration": "1m 53s",
       "workflow": "Deploy"
     },
     {
@@ -667,21 +683,6 @@
       "commit_msg": "v3.25.4 - Fix Decimal in db_cache_manager + redis",
       "commit_date": "2026-02-18 15:46",
       "duration": "1m 39s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ms-flash",
-      "url": "https://github.com/algojj/sc-ms-flash",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22156366984",
-      "run_name": "Deploy",
-      "branch": "v3.22.3",
-      "commit_msg": "v3.22.3 - Fix concurrent scrape interference",
-      "commit_date": "2026-02-18 17:27",
-      "duration": "38s",
       "workflow": "Deploy"
     },
     {
