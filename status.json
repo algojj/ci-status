@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-18 17:04:32",
+  "timestamp": "2026-02-18 17:59:06",
   "total": 58,
   "counts": {
     "failure": 27,
@@ -21,21 +21,6 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "6s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22154546164",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "fix: hide About card when no description available",
-      "commit_date": "2026-02-18 16:31",
-      "duration": "9s",
       "workflow": "CI"
     },
     {
@@ -369,6 +354,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-web",
+      "url": "https://github.com/algojj/sc-web",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22155829962",
+      "run_name": "Deploy",
+      "branch": "v3.23.2",
+      "commit_msg": "v3.23.2 - Flash Research 3-column layout + news dates",
+      "commit_date": "2026-02-18 17:10",
+      "duration": "8s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-webhooks",
       "url": "https://github.com/algojj/sc-webhooks",
       "private": true,
@@ -420,12 +420,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22155614715",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22157358932",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 17:04",
-      "duration": "5s",
+      "commit_date": "2026-02-18 17:58",
+      "duration": "7s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -435,12 +435,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22155218498",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22156864580",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-18 16:52",
-      "duration": "4s",
+      "commit_date": "2026-02-18 17:42",
+      "duration": "6s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -625,6 +625,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22156001722",
+      "run_name": "Deploy",
+      "branch": "v3.26.1-fix",
+      "commit_msg": "v3.26.1 - Ticker page layout + news dates",
+      "commit_date": "2026-02-18 17:15",
+      "duration": "2m 4s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ms-database",
       "url": "https://github.com/algojj/sc-ms-database",
       "private": true,
@@ -661,12 +676,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22154844120",
+      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22156366984",
       "run_name": "Deploy",
-      "branch": "v3.25.1",
-      "commit_msg": "v3.25.1 - Fix Playwright missing libxfixes3",
-      "commit_date": "2026-02-18 16:40",
-      "duration": "1m 40s",
+      "branch": "v3.22.3",
+      "commit_msg": "v3.22.3 - Fix concurrent scrape interference",
+      "commit_date": "2026-02-18 17:27",
+      "duration": "38s",
       "workflow": "Deploy"
     },
     {
@@ -848,21 +863,6 @@
       "commit_date": "2026-02-18 15:45",
       "duration": "42s",
       "workflow": "Build and Release"
-    },
-    {
-      "name": "sc-web",
-      "url": "https://github.com/algojj/sc-web",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/21984680157",
-      "run_name": "Deploy",
-      "branch": "v3.27.0",
-      "commit_msg": "v3.27.0",
-      "commit_date": "2026-02-13 08:11",
-      "duration": "1m 25s",
-      "workflow": "Deploy"
     }
   ]
 }
