@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-18 12:58:25",
+  "timestamp": "2026-02-18 14:15:11",
   "total": 58,
   "counts": {
     "failure": 30,
@@ -450,12 +450,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22140155991",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22149866786",
       "run_name": "Release",
-      "branch": "v2.9.2",
-      "commit_msg": "fix: auto-login via URL token, shares reconciliation for shorts, tests",
-      "commit_date": "2026-02-18 09:41",
-      "duration": "5s",
+      "branch": "v2.12.0",
+      "commit_msg": "feat: halt detection with OPENM exit, LULD alerts, dashboard P&L fix",
+      "commit_date": "2026-02-18 14:13",
+      "duration": "7s",
       "workflow": "Release"
     },
     {
@@ -465,12 +465,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22147092540",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22149899794",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 12:57",
-      "duration": "6s",
+      "commit_date": "2026-02-18 14:14",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -676,12 +676,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-volume-analytics/actions/runs/22106932141",
+      "run_url": "https://github.com/algojj/sc-ms-volume-analytics/actions/runs/22149585889",
       "run_name": "Deploy",
-      "branch": "v2.0.0",
-      "commit_msg": "v2.0.0 - Redis Pub/Sub (No Direct Polygon WS)",
-      "commit_date": "2026-02-17 13:36",
-      "duration": "27m 29s",
+      "branch": "v2.0.1",
+      "commit_msg": "v2.0.1 - Fix rogue Polygon WS (no-cache rebuild)",
+      "commit_date": "2026-02-18 14:05",
+      "duration": "2m 3s",
       "workflow": "Deploy"
     },
     {
@@ -706,12 +706,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22145423946",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22148388207",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-18 12:12",
-      "duration": "31m 22s",
+      "commit_date": "2026-02-18 13:32",
+      "duration": "31m 24s",
       "workflow": "Flash Research Scraper"
     },
     {
