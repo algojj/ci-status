@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-18 14:15:11",
+  "timestamp": "2026-02-18 15:05:04",
   "total": 58,
   "counts": {
-    "failure": 30,
-    "running": 1,
+    "failure": 29,
+    "running": 2,
     "no_ci": 2,
     "success": 25
   },
@@ -264,21 +264,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-ms-polygon",
-      "url": "https://github.com/algojj/sc-ms-polygon",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-polygon/actions/runs/22106927574",
-      "run_name": "Deploy",
-      "branch": "v2.1.1",
-      "commit_msg": "v2.1.1 - Proxy-Only Mode (No Direct Polygon WS)",
-      "commit_date": "2026-02-17 13:36",
-      "duration": "26m 38s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-ms-report",
       "url": "https://github.com/algojj/sc-ms-report",
       "private": true,
@@ -465,13 +450,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22149899794",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22151615896",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 14:14",
+      "commit_date": "2026-02-18 15:04",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22151214720",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-18 14:52",
+      "duration": "4s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-database",
@@ -670,6 +670,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ms-polygon",
+      "url": "https://github.com/algojj/sc-ms-polygon",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-polygon/actions/runs/22150245039",
+      "run_name": "Deploy",
+      "branch": "v2.2.0",
+      "commit_msg": "v2.2.0 - Direct Polygon WS mode",
+      "commit_date": "2026-02-18 14:24",
+      "duration": "43s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ms-volume-analytics",
       "url": "https://github.com/algojj/sc-ms-volume-analytics",
       "private": true,
@@ -698,21 +713,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22148388207",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-18 13:32",
-      "duration": "31m 24s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-scanner-afterhours",
