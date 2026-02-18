@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-17 21:02:01",
+  "timestamp": "2026-02-18 08:43:04",
   "total": 58,
   "counts": {
     "failure": 43,
@@ -81,6 +81,21 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "6s",
+      "workflow": "CI"
+    },
+    {
+      "name": "sc-algo-super-para",
+      "url": "https://github.com/algojj/sc-algo-super-para",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22136956057",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "chore: remove dead webhook_client.py (now DB-driven only)",
+      "commit_date": "2026-02-18 07:58",
+      "duration": "5s",
       "workflow": "CI"
     },
     {
@@ -195,11 +210,11 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22104105559",
+      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22138256696",
       "run_name": "CI",
       "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
-      "commit_date": "2026-02-17 12:17",
+      "commit_msg": "chore: remove polygon-stream-b from monitoring (deleted)",
+      "commit_date": "2026-02-18 08:40",
       "duration": "6s",
       "workflow": "CI"
     },
@@ -429,21 +444,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-ms-watchlist",
-      "url": "https://github.com/algojj/sc-ms-watchlist",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-watchlist/actions/runs/22104115472",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
-      "commit_date": "2026-02-17 12:17",
-      "duration": "6s",
-      "workflow": "CI"
-    },
-    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -660,11 +660,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22120723397",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22138319085",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 21:01",
+      "commit_date": "2026-02-18 08:42",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
@@ -775,21 +775,6 @@
       "workflow": "Proof HTML"
     },
     {
-      "name": "sc-algo-super-para",
-      "url": "https://github.com/algojj/sc-algo-super-para",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22120039289",
-      "run_name": "Deploy",
-      "branch": "v1.0.1",
-      "commit_msg": "v1.0.1 - Fix: SHORT strategy (not LONG)",
-      "commit_date": "2026-02-17 20:33",
-      "duration": "57s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-ms-database",
       "url": "https://github.com/algojj/sc-ms-database",
       "private": true,
@@ -820,19 +805,34 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ms-watchlist",
+      "url": "https://github.com/algojj/sc-ms-watchlist",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-watchlist/actions/runs/22138249004",
+      "run_name": "Deploy",
+      "branch": "v3.22.3",
+      "commit_msg": "v3.22.3 - Replace Postmark with Discord webhook",
+      "commit_date": "2026-02-18 08:40",
+      "duration": "53s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ops",
       "url": "https://github.com/algojj/sc-ops",
       "private": true,
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22120080006",
-      "run_name": "DilutionTracker Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22129409742",
+      "run_name": "Flash Research Scraper",
       "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-17 20:35",
-      "duration": "5m 33s",
-      "workflow": "DilutionTracker Scraper"
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-18 03:35",
+      "duration": "31m 23s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-shared",
