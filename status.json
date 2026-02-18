@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-02-18 18:45:39",
+  "timestamp": "2026-02-18 19:39:15",
   "total": 58,
   "counts": {
-    "failure": 27,
+    "failure": 26,
     "running": 2,
-    "cancelled": 1,
+    "cancelled": 2,
     "no_ci": 2,
     "success": 26
   },
@@ -112,21 +112,6 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "6s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-ms-jobs",
-      "url": "https://github.com/algojj/sc-ms-jobs",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-jobs/actions/runs/22104129054",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
-      "commit_date": "2026-02-17 12:17",
-      "duration": "5s",
       "workflow": "CI"
     },
     {
@@ -406,12 +391,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22152739551",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22159354904",
       "run_name": "Release",
-      "branch": "v2.12.2",
-      "commit_msg": "fix: scope signals by instance_name to prevent cross-instance mixing",
-      "commit_date": "2026-02-18 15:38",
-      "duration": "6s",
+      "branch": "v2.13.0",
+      "commit_msg": "feat: startup reconciliation guard + skip orphan adoption for manual \u2026",
+      "commit_date": "2026-02-18 19:00",
+      "duration": "5s",
       "workflow": "Release"
     },
     {
@@ -421,12 +406,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22158877933",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22160528625",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 18:45",
-      "duration": "4s",
+      "commit_date": "2026-02-18 19:38",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -436,12 +421,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22158628092",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22160456559",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-18 18:37",
-      "duration": "3s",
+      "commit_date": "2026-02-18 19:36",
+      "duration": "2m 50s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -457,6 +442,21 @@
       "commit_msg": "v3.22.4 - Fix no_wait scrape not running",
       "commit_date": "2026-02-18 18:14",
       "duration": "9m 55s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ms-jobs",
+      "url": "https://github.com/algojj/sc-ms-jobs",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-ms-jobs/actions/runs/22159465633",
+      "run_name": "Deploy",
+      "branch": "v3.22.2",
+      "commit_msg": "v3.22.2 - Fix job times + holiday awareness",
+      "commit_date": "2026-02-18 19:03",
+      "duration": "34m 25s",
       "workflow": "Deploy"
     },
     {
