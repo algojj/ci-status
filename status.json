@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-17 20:39:24",
+  "timestamp": "2026-02-17 21:02:01",
   "total": 58,
   "counts": {
     "failure": 43,
-    "running": 2,
+    "running": 1,
     "no_ci": 2,
-    "success": 11
+    "success": 12
   },
   "repos": [
     {
@@ -660,28 +660,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22120169409",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22120723397",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-17 20:38",
+      "commit_date": "2026-02-17 21:01",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22120080006",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-17 20:35",
-      "duration": "3s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-database",
@@ -833,6 +818,21 @@
       "commit_date": "2026-02-17 13:36",
       "duration": "27m 29s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22120080006",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-17 20:35",
+      "duration": "5m 33s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-shared",
