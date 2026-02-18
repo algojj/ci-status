@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-18 20:17:48",
+  "timestamp": "2026-02-18 20:54:54",
   "total": 58,
   "counts": {
     "failure": 26,
-    "running": 1,
+    "running": 2,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 27
+    "success": 26
   },
   "repos": [
     {
@@ -391,11 +391,11 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22159354904",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22162283124",
       "run_name": "Release",
-      "branch": "v2.13.0",
-      "commit_msg": "feat: startup reconciliation guard + skip orphan adoption for manual \u2026",
-      "commit_date": "2026-02-18 19:00",
+      "branch": "v2.15.0",
+      "commit_msg": "feat: %OrderAct streaming, STOPLMTP backup SL, orderSrc dashboard split",
+      "commit_date": "2026-02-18 20:43",
       "duration": "5s",
       "workflow": "Release"
     },
@@ -406,13 +406,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22161596426",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22162551771",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-18 20:17",
+      "commit_date": "2026-02-18 20:54",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22162486180",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-18 20:51",
+      "duration": "3s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-ms-flash",
@@ -662,13 +677,13 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22153011922",
-      "run_name": "Deploy",
-      "branch": "v3.25.4",
-      "commit_msg": "v3.25.4 - Fix Decimal in db_cache_manager + redis",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "1m 39s",
-      "workflow": "Deploy"
+      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22162426974",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "ci: use self-hosted runner for CI (billing fix)",
+      "commit_date": "2026-02-18 20:49",
+      "duration": "32s",
+      "workflow": "CI"
     },
     {
       "name": "sc-ms-polygon",
@@ -714,21 +729,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22161163019",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-18 20:02",
-      "duration": "5m 17s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-scanner-afterhours",
