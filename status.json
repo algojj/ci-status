@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-19 19:44:44",
+  "timestamp": "2026-02-19 20:17:08",
   "total": 58,
   "counts": {
     "failure": 25,
-    "running": 3,
+    "running": 2,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 26
+    "success": 27
   },
   "repos": [
     {
@@ -391,11 +391,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22203243772",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22204179115",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-19 19:44",
+      "commit_date": "2026-02-19 20:16",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -411,23 +411,8 @@
       "branch": "v3.27.6",
       "commit_msg": "v3.27.6 \u2014 Anomaly cooldown for split-market trades",
       "commit_date": "2026-02-19 19:13",
-      "duration": "0s",
+      "duration": "45m 50s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22203079003",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-19 19:38",
-      "duration": "3s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-ms-flash",
@@ -714,6 +699,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22203079003",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-19 19:38",
+      "duration": "6m 25s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
