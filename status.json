@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19 08:42:30",
+  "timestamp": "2026-02-19 09:29:07",
   "total": 58,
   "counts": {
     "failure": 26,
@@ -391,12 +391,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22162283124",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22180627208",
       "run_name": "Release",
-      "branch": "v2.15.0",
-      "commit_msg": "feat: %OrderAct streaming, STOPLMTP backup SL, orderSrc dashboard split",
-      "commit_date": "2026-02-18 20:43",
-      "duration": "5s",
+      "branch": "v2.16.0",
+      "commit_msg": "feat: DAS as source of truth \u2014 deprecate FileStore, fix reconciliatio\u2026",
+      "commit_date": "2026-02-19 08:51",
+      "duration": "1m 42s",
       "workflow": "Release"
     },
     {
@@ -406,11 +406,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22180334102",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22181793496",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-19 08:42",
+      "commit_date": "2026-02-19 09:28",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
