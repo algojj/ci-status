@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19 12:55:49",
+  "timestamp": "2026-02-19 14:02:45",
   "total": 58,
   "counts": {
     "failure": 25,
@@ -376,12 +376,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22189112889",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22189687275",
       "run_name": "Release",
       "branch": "v2.17.0",
-      "commit_msg": "feat: price circuit breaker, orphan filter, FLATTEN removal, TP prelo\u2026",
-      "commit_date": "2026-02-19 12:53",
-      "duration": "1m 51s",
+      "commit_msg": "feat: backup SL health check \u2014 auto re-place STOPLMTP if cancelled",
+      "commit_date": "2026-02-19 13:08",
+      "duration": "2m 0s",
       "workflow": "Release"
     },
     {
@@ -391,11 +391,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22189195682",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22191690788",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-19 12:55",
+      "commit_date": "2026-02-19 14:02",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -406,11 +406,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22187567943",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22190383714",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-19 12:13",
+      "commit_date": "2026-02-19 13:26",
       "duration": "4s",
       "workflow": "Flash Research Scraper"
     },
