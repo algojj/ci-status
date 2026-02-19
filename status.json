@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-19 17:39:56",
+  "timestamp": "2026-02-19 18:16:05",
   "total": 58,
   "counts": {
     "failure": 25,
@@ -376,12 +376,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22189687275",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22200210704",
       "run_name": "Release",
-      "branch": "v2.17.0",
-      "commit_msg": "feat: backup SL health check \u2014 auto re-place STOPLMTP if cancelled",
-      "commit_date": "2026-02-19 13:08",
-      "duration": "2m 0s",
+      "branch": "v2.15.1",
+      "commit_msg": "Release",
+      "commit_date": "2026-02-19 18:09",
+      "duration": "59s",
       "workflow": "Release"
     },
     {
@@ -391,12 +391,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22199211280",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22200427182",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-19 17:39",
-      "duration": "4s",
+      "commit_date": "2026-02-19 18:15",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -411,7 +411,7 @@
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
       "commit_date": "2026-02-19 17:39",
-      "duration": "0s",
+      "duration": "18m 12s",
       "workflow": "Flash Research Scraper"
     },
     {
