@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-19 11:54:44",
+  "timestamp": "2026-02-19 12:55:49",
   "total": 58,
   "counts": {
-    "failure": 26,
+    "failure": 25,
     "running": 2,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 26
+    "success": 27
   },
   "repos": [
     {
@@ -295,21 +295,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-polygon-proxy",
-      "url": "https://github.com/algojj/sc-polygon-proxy",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-polygon-proxy/actions/runs/22186143896",
-      "run_name": "Deploy",
-      "branch": "v2.1.0",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-19 11:36",
-      "duration": "15s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -391,12 +376,12 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22180627208",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22189112889",
       "run_name": "Release",
-      "branch": "v2.16.0",
-      "commit_msg": "feat: DAS as source of truth \u2014 deprecate FileStore, fix reconciliatio\u2026",
-      "commit_date": "2026-02-19 08:51",
-      "duration": "1m 42s",
+      "branch": "v2.17.0",
+      "commit_msg": "feat: price circuit breaker, orphan filter, FLATTEN removal, TP prelo\u2026",
+      "commit_date": "2026-02-19 12:53",
+      "duration": "1m 51s",
       "workflow": "Release"
     },
     {
@@ -406,11 +391,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22186835088",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22189195682",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-19 11:54",
+      "commit_date": "2026-02-19 12:55",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -421,11 +406,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22185176754",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22187567943",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-19 11:09",
+      "commit_date": "2026-02-19 12:13",
       "duration": "4s",
       "workflow": "Flash Research Scraper"
     },
@@ -727,6 +712,21 @@
       "branch": "v3.22.3",
       "commit_msg": "v3.22.3 - Replace Postmark with Discord webhook",
       "commit_date": "2026-02-18 08:40",
+      "duration": "53s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-polygon-proxy",
+      "url": "https://github.com/algojj/sc-polygon-proxy",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-polygon-proxy/actions/runs/22188518346",
+      "run_name": "Deploy",
+      "branch": "v2.1.1",
+      "commit_msg": "v2.1.1 \u2014 Send timeout prevents slow consumer blocking",
+      "commit_date": "2026-02-19 12:37",
       "duration": "53s",
       "workflow": "Deploy"
     },
