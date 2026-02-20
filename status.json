@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-20 18:44:00",
+  "timestamp": "2026-02-20 19:00:08",
   "total": 58,
   "counts": {
-    "failure": 24,
-    "running": 3,
+    "failure": 23,
+    "running": 4,
     "cancelled": 2,
     "no_ci": 2,
     "success": 27
@@ -67,21 +67,6 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "5s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-ms-health",
-      "url": "https://github.com/algojj/sc-ms-health",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22138256696",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "chore: remove polygon-stream-b from monitoring (deleted)",
-      "commit_date": "2026-02-18 08:40",
-      "duration": "6s",
       "workflow": "CI"
     },
     {
@@ -376,12 +361,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22242342676",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22242830416",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-20 18:43",
-      "duration": "5s",
+      "commit_date": "2026-02-20 18:59",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -400,17 +385,32 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ms-health",
+      "url": "https://github.com/algojj/sc-ms-health",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22242373503",
+      "run_name": "Deploy",
+      "branch": "v3.25.1",
+      "commit_msg": "v3.25.1 - Fix Redis deprecation warning",
+      "commit_date": "2026-02-20 18:44",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ops",
       "url": "https://github.com/algojj/sc-ops",
       "private": true,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22241885695",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22242590198",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-20 18:28",
+      "commit_date": "2026-02-20 18:51",
       "duration": "0s",
       "workflow": "Flash Research Scraper"
     },
