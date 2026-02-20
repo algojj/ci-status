@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20 09:02:21",
+  "timestamp": "2026-02-20 10:34:44",
   "total": 58,
   "counts": {
-    "failure": 24,
-    "running": 1,
-    "cancelled": 3,
+    "failure": 23,
+    "running": 2,
+    "cancelled": 2,
     "no_ci": 2,
-    "success": 28
+    "success": 29
   },
   "repos": [
     {
@@ -355,49 +355,34 @@
       "workflow": "CI"
     },
     {
-      "name": "signal-executor",
-      "url": "https://github.com/algojj/signal-executor",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22210958438",
-      "run_name": "Release",
-      "branch": "v2.17.1",
-      "commit_msg": "fix: replace all-day tradedToday block with time-based cooldown",
-      "commit_date": "2026-02-20 01:11",
-      "duration": "1m 54s",
-      "workflow": "Release"
-    },
-    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22223312935",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22226141109",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-20 09:01",
+      "commit_date": "2026-02-20 10:34",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
-      "name": "sc-algo-early-bird-short",
-      "url": "https://github.com/algojj/sc-algo-early-bird-short",
+      "name": "signal-executor",
+      "url": "https://github.com/algojj/signal-executor",
       "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-algo-early-bird-short/actions/runs/22212724721",
-      "run_name": "Deploy",
-      "branch": "v1.3.1",
-      "commit_msg": "v1.3.1 - Fix postmarket_watchlist column name",
-      "commit_date": "2026-02-20 02:34",
-      "duration": "30m 24s",
-      "workflow": "Deploy"
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22226153934",
+      "run_name": "Release",
+      "branch": "v2.18.0",
+      "commit_msg": "fix: prevent duplicate backup SL from double fill detection",
+      "commit_date": "2026-02-20 10:34",
+      "duration": "0s",
+      "workflow": "Release"
     },
     {
       "name": "sc-ms-flash",
@@ -563,6 +548,21 @@
       "commit_msg": "Deploy",
       "commit_date": "2026-02-18 15:46",
       "duration": "19m 29s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-early-bird-short",
+      "url": "https://github.com/algojj/sc-algo-early-bird-short",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-early-bird-short/actions/runs/22223662836",
+      "run_name": "Deploy",
+      "branch": "v1.3.2",
+      "commit_msg": "v1.3.2 - Fix watchlist date lookup (actual fix)",
+      "commit_date": "2026-02-20 09:13",
+      "duration": "57s",
       "workflow": "Deploy"
     },
     {
