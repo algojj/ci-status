@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20 18:01:24",
+  "timestamp": "2026-02-20 18:44:00",
   "total": 58,
   "counts": {
     "failure": 24,
-    "running": 1,
+    "running": 3,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 29
+    "success": 27
   },
   "repos": [
     {
@@ -376,13 +376,43 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22241013591",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22242342676",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-20 18:01",
-      "duration": "4s",
+      "commit_date": "2026-02-20 18:43",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-algo-gus",
+      "url": "https://github.com/algojj/sc-algo-gus",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22242184862",
+      "run_name": "Deploy",
+      "branch": "v3.25.1",
+      "commit_msg": "v3.25.1 - Fix entry detection TypeError",
+      "commit_date": "2026-02-20 18:38",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22241885695",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-20 18:28",
+      "duration": "0s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-flash",
@@ -566,21 +596,6 @@
       "workflow": "Deploy"
     },
     {
-      "name": "sc-algo-gus",
-      "url": "https://github.com/algojj/sc-algo-gus",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22153026202",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "10m 3s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-algo-mfl",
       "url": "https://github.com/algojj/sc-algo-mfl",
       "private": true,
@@ -699,21 +714,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22240801856",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-20 17:54",
-      "duration": "5m 37s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
