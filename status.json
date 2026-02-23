@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-20 21:02:33",
-  "total": 58,
+  "timestamp": "2026-02-23 08:43:02",
+  "total": 59,
   "counts": {
     "failure": 24,
     "running": 1,
-    "cancelled": 2,
+    "cancelled": 1,
     "no_ci": 2,
-    "success": 29
+    "success": 31
   },
   "repos": [
     {
@@ -376,28 +376,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22245967815",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22304627847",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-20 21:02",
-      "duration": "4s",
+      "commit_date": "2026-02-23 08:42",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ms-flash",
-      "url": "https://github.com/algojj/sc-ms-flash",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22157865536",
-      "run_name": "Deploy",
-      "branch": "v3.22.4",
-      "commit_msg": "v3.22.4 - Fix no_wait scrape not running",
-      "commit_date": "2026-02-18 18:14",
-      "duration": "9m 55s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-jobs",
@@ -602,12 +587,27 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22157644144",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22272475178",
       "run_name": "Deploy",
-      "branch": "v3.26.5a",
-      "commit_msg": "v3.26.5 - Auto-trigger Flash Research scrape",
-      "commit_date": "2026-02-18 18:07",
-      "duration": "1m 53s",
+      "branch": "v3.28.16",
+      "commit_msg": "v3.28.16 - Key Executives improvements",
+      "commit_date": "2026-02-22 04:03",
+      "duration": "2m 34s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-journal",
+      "url": "https://github.com/algojj/sc-journal",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-journal/actions/runs/22265756664",
+      "run_name": "Deploy",
+      "branch": "main",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-02-21 19:41",
+      "duration": "28s",
       "workflow": "Deploy"
     },
     {
@@ -632,13 +632,28 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22162426974",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for CI (billing fix)",
-      "commit_date": "2026-02-18 20:49",
-      "duration": "32s",
-      "workflow": "CI"
+      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22270053408",
+      "run_name": "Deploy",
+      "branch": "v3.25.6",
+      "commit_msg": "v3.25.6 - Bypass stale cache for missing DT data",
+      "commit_date": "2026-02-22 01:01",
+      "duration": "6m 38s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ms-flash",
+      "url": "https://github.com/algojj/sc-ms-flash",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22270878849",
+      "run_name": "Deploy",
+      "branch": "v3.22.5",
+      "commit_msg": "v3.22.5 - Fix expired session retry",
+      "commit_date": "2026-02-22 02:04",
+      "duration": "29m 34s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-health",
@@ -707,13 +722,13 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22245740064",
-      "run_name": "DilutionTracker Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22293940774",
+      "run_name": "Daily Cleanup (Alerts)",
       "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-20 20:51",
-      "duration": "5m 20s",
-      "workflow": "DilutionTracker Scraper"
+      "commit_msg": "Daily Cleanup (Alerts)",
+      "commit_date": "2026-02-23 02:21",
+      "duration": "16m 29s",
+      "workflow": "Daily Cleanup (Alerts)"
     },
     {
       "name": "sc-polygon-proxy",
