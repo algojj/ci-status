@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-23 19:09:26",
+  "timestamp": "2026-02-23 20:03:09",
   "total": 59,
   "counts": {
     "failure": 24,
-    "running": 2,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 30
+    "success": 31
   },
   "repos": [
     {
@@ -376,28 +376,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22326898850",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22328593766",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-23 19:08",
-      "duration": "5s",
+      "commit_date": "2026-02-23 20:02",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22326891419",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-23 19:08",
-      "duration": "0s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -602,12 +587,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22326178369",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22327524267",
       "run_name": "Deploy",
-      "branch": "v3.28.17",
-      "commit_msg": "v3.28.17 - SEC Filing AI Analyze Button",
-      "commit_date": "2026-02-23 18:47",
-      "duration": "2m 25s",
+      "branch": "v3.28.18",
+      "commit_msg": "v3.28.18 - Fix JS quote escaping in Analyze button",
+      "commit_date": "2026-02-23 19:28",
+      "duration": "2m 22s",
       "workflow": "Deploy"
     },
     {
@@ -729,6 +714,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22327818641",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-23 19:37",
+      "duration": "11m 50s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
