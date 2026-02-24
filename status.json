@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-24 15:39:12",
+  "timestamp": "2026-02-24 16:40:45",
   "total": 59,
   "counts": {
     "failure": 24,
-    "running": 2,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 30
+    "success": 31
   },
   "repos": [
     {
@@ -376,28 +376,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22364901948",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22367072813",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-24 15:38",
+      "commit_date": "2026-02-24 16:40",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22364655765",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-24 15:31",
-      "duration": "3s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -527,12 +512,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22202294383",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22365802842",
       "run_name": "Deploy",
-      "branch": "v3.27.6",
-      "commit_msg": "v3.27.6 \u2014 Anomaly cooldown for split-market trades",
-      "commit_date": "2026-02-19 19:13",
-      "duration": "2h 49m",
+      "branch": "v3.27.7",
+      "commit_msg": "v3.27.7 - TP below LOD filter",
+      "commit_date": "2026-02-24 16:04",
+      "duration": "30m 48s",
       "workflow": "Deploy"
     },
     {
@@ -587,12 +572,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22152079308",
+      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22366806310",
       "run_name": "Deploy",
-      "branch": "v1.0.5",
-      "commit_msg": "v1.0.5 - Fix fetchrow via sc-shared update",
-      "commit_date": "2026-02-18 15:18",
-      "duration": "1m 37s",
+      "branch": "v1.1.0",
+      "commit_msg": "v1.1.0 - Trade management (SL/TP/MaxLoss/EOD)",
+      "commit_date": "2026-02-24 16:32",
+      "duration": "1m 36s",
       "workflow": "Deploy"
     },
     {
@@ -729,6 +714,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22365561814",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-24 15:57",
+      "duration": "10m 37s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
