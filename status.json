@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-02-23 20:48:28",
+  "timestamp": "2026-02-24 08:44:14",
   "total": 59,
   "counts": {
     "failure": 24,
@@ -376,12 +376,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22329935751",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22349352272",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-23 20:47",
-      "duration": "5s",
+      "commit_date": "2026-02-24 08:43",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -587,12 +587,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22327524267",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22332386427",
       "run_name": "Deploy",
-      "branch": "v3.28.18",
-      "commit_msg": "v3.28.18 - Fix JS quote escaping in Analyze button",
-      "commit_date": "2026-02-23 19:28",
-      "duration": "2m 22s",
+      "branch": "v3.28.23",
+      "commit_msg": "v3.28.23 - Social Pulse concise prompt",
+      "commit_date": "2026-02-23 22:18",
+      "duration": "2m 47s",
       "workflow": "Deploy"
     },
     {
@@ -722,13 +722,13 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22329467990",
-      "run_name": "DilutionTracker Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22339517140",
+      "run_name": "Flash Research Scraper",
       "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-23 20:32",
-      "duration": "12m 15s",
-      "workflow": "DilutionTracker Scraper"
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-24 03:32",
+      "duration": "38m 48s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-polygon-proxy",
