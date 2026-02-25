@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-25 13:35:33",
+  "timestamp": "2026-02-25 14:44:26",
   "total": 59,
   "counts": {
     "failure": 24,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 31
+    "success": 30
   },
   "repos": [
     {
@@ -376,13 +376,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22406232029",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22408746534",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-25 13:35",
-      "duration": "6s",
+      "commit_date": "2026-02-25 14:44",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22407581500",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-25 14:10",
+      "duration": "3s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -714,21 +729,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22403744184",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-25 12:32",
-      "duration": "1h 1m",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-polygon-proxy",
