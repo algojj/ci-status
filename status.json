@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-02-26 18:38:12",
-  "total": 59,
+  "timestamp": "2026-02-26 19:03:18",
+  "total": 60,
   "counts": {
     "failure": 24,
     "running": 2,
     "cancelled": 1,
-    "no_ci": 2,
+    "no_ci": 3,
     "success": 30
   },
   "repos": [
@@ -376,11 +376,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22462304024",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22463132302",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-26 18:37",
+      "commit_date": "2026-02-26 19:02",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -391,13 +391,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22462207606",
-      "run_name": "Flash Research Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22462957938",
+      "run_name": "DilutionTracker Scraper",
       "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-26 18:34",
-      "duration": "0s",
-      "workflow": "Flash Research Scraper"
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-26 18:57",
+      "duration": "3s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -417,6 +417,14 @@
     {
       "name": "sc-database",
       "url": "https://github.com/algojj/sc-database",
+      "private": true,
+      "status_key": "no_ci",
+      "status_label": "Sin CI",
+      "status_icon": "\u26a0\ufe0f"
+    },
+    {
+      "name": "sc-dilution-scraper",
+      "url": "https://github.com/algojj/sc-dilution-scraper",
       "private": true,
       "status_key": "no_ci",
       "status_label": "Sin CI",
