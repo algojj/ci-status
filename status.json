@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-26 19:03:18",
+  "timestamp": "2026-02-26 19:54:09",
   "total": 60,
   "counts": {
-    "failure": 24,
-    "running": 2,
+    "failure": 25,
+    "running": 1,
     "cancelled": 1,
-    "no_ci": 3,
-    "success": 30
+    "no_ci": 2,
+    "success": 31
   },
   "repos": [
     {
@@ -22,6 +22,21 @@
       "commit_msg": "v3.25.1 - Fix entry detection TypeError",
       "commit_date": "2026-02-20 18:38",
       "duration": "39m 5s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-dilution-scraper",
+      "url": "https://github.com/algojj/sc-dilution-scraper",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22464514970",
+      "run_name": "Deploy",
+      "branch": "v1.0.9",
+      "commit_msg": "v1.0.9 - Fix scanner watcher + deploy fix",
+      "commit_date": "2026-02-26 19:46",
+      "duration": "4m 40s",
       "workflow": "Deploy"
     },
     {
@@ -376,28 +391,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22463132302",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22464711120",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-26 19:02",
+      "commit_date": "2026-02-26 19:53",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22462957938",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-26 18:57",
-      "duration": "3s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -417,14 +417,6 @@
     {
       "name": "sc-database",
       "url": "https://github.com/algojj/sc-database",
-      "private": true,
-      "status_key": "no_ci",
-      "status_label": "Sin CI",
-      "status_icon": "\u26a0\ufe0f"
-    },
-    {
-      "name": "sc-dilution-scraper",
-      "url": "https://github.com/algojj/sc-dilution-scraper",
       "private": true,
       "status_key": "no_ci",
       "status_label": "Sin CI",
@@ -610,12 +602,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22457664862",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22464486218",
       "run_name": "Deploy",
-      "branch": "v3.28.29",
-      "commit_msg": "v3.28.29 - Full Trading Catalysts Framework prompt",
-      "commit_date": "2026-02-26 16:24",
-      "duration": "2m 4s",
+      "branch": "v3.28.32",
+      "commit_msg": "v3.28.32 - Live Polygon news fallback on ticker page",
+      "commit_date": "2026-02-26 19:45",
+      "duration": "6m 34s",
       "workflow": "Deploy"
     },
     {
@@ -737,6 +729,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22464226690",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-26 19:37",
+      "duration": "11m 6s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
