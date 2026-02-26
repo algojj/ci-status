@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-26 19:54:09",
+  "timestamp": "2026-02-26 20:36:27",
   "total": 60,
   "counts": {
     "failure": 25,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 31
+    "success": 30
   },
   "repos": [
     {
@@ -391,13 +391,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22464711120",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22465912272",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-26 19:53",
-      "duration": "5s",
+      "commit_date": "2026-02-26 20:36",
+      "duration": "3s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22465832055",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-02-26 20:33",
+      "duration": "0s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -602,12 +617,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22464486218",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22464743320",
       "run_name": "Deploy",
-      "branch": "v3.28.32",
-      "commit_msg": "v3.28.32 - Live Polygon news fallback on ticker page",
-      "commit_date": "2026-02-26 19:45",
-      "duration": "6m 34s",
+      "branch": "v3.28.33",
+      "commit_msg": "v3.28.33 - Check Polygon news when DB news stale >30d",
+      "commit_date": "2026-02-26 19:54",
+      "duration": "3m 35s",
       "workflow": "Deploy"
     },
     {
@@ -729,21 +744,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22464226690",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-02-26 19:37",
-      "duration": "11m 6s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
