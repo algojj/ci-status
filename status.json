@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-27 12:10:21",
+  "timestamp": "2026-02-27 12:54:08",
   "total": 60,
   "counts": {
     "failure": 25,
-    "running": 2,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 30
+    "success": 31
   },
   "repos": [
     {
@@ -391,28 +391,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22491678296",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22493305949",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-27 12:09",
+      "commit_date": "2026-02-27 12:53",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22491571785",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-27 12:07",
-      "duration": "2s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -744,6 +729,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22492616774",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-02-27 12:35",
+      "duration": "11m 41s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
