@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-02-27 20:58:18",
+  "timestamp": "2026-03-02 08:35:23",
   "total": 60,
   "counts": {
-    "failure": 25,
-    "running": 2,
+    "failure": 23,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 30
+    "success": 33
   },
   "repos": [
     {
@@ -127,21 +127,6 @@
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
       "commit_date": "2026-02-17 12:17",
       "duration": "6s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-ms-metadata",
-      "url": "https://github.com/algojj/sc-ms-metadata",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ms-metadata/actions/runs/22104106521",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
-      "commit_date": "2026-02-17 12:17",
-      "duration": "5s",
       "workflow": "CI"
     },
     {
@@ -331,13 +316,13 @@
       "status_key": "failure",
       "status_label": "Failing",
       "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/22155829962",
-      "run_name": "Deploy",
-      "branch": "v3.23.2",
-      "commit_msg": "v3.23.2 - Flash Research 3-column layout + news dates",
-      "commit_date": "2026-02-18 17:10",
-      "duration": "8s",
-      "workflow": "Deploy"
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22550286546",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "chore: update package-lock.json",
+      "commit_date": "2026-03-01 15:59",
+      "duration": "15s",
+      "workflow": "CI"
     },
     {
       "name": "sc-webhooks",
@@ -347,21 +332,6 @@
       "status_label": "Failing",
       "status_icon": "\u274c",
       "run_url": "https://github.com/algojj/sc-webhooks/actions/runs/22104115845",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
-      "commit_date": "2026-02-17 12:17",
-      "duration": "5s",
-      "workflow": "CI"
-    },
-    {
-      "name": "sc-websocket-broadcast",
-      "url": "https://github.com/algojj/sc-websocket-broadcast",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-websocket-broadcast/actions/runs/22104117030",
       "run_name": "CI",
       "branch": "main",
       "commit_msg": "ci: use self-hosted runner for all jobs (billing fix)",
@@ -391,28 +361,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22508536412",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22574184019",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-02-27 20:57",
+      "commit_date": "2026-03-02 08:34",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22508362399",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-02-27 20:50",
-      "duration": "0s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -617,12 +572,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22464743320",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22550891889",
       "run_name": "Deploy",
-      "branch": "v3.28.33",
-      "commit_msg": "v3.28.33 - Check Polygon news when DB news stale >30d",
-      "commit_date": "2026-02-26 19:54",
-      "duration": "3m 35s",
+      "branch": "v3.28.34",
+      "commit_msg": "v3.28.34 - Correlation ID middleware (X-Request-ID)",
+      "commit_date": "2026-03-01 16:31",
+      "duration": "2m 2s",
       "workflow": "Deploy"
     },
     {
@@ -701,6 +656,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ms-metadata",
+      "url": "https://github.com/algojj/sc-ms-metadata",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-metadata/actions/runs/22550276833",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "feat: float-scraper v1.0.3 \u2014 dedicated Chromium image + smart priorit\u2026",
+      "commit_date": "2026-03-01 15:58",
+      "duration": "1m 8s",
+      "workflow": "CI"
+    },
+    {
       "name": "sc-ms-polygon",
       "url": "https://github.com/algojj/sc-ms-polygon",
       "private": true,
@@ -744,6 +714,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22562337323",
+      "run_name": "Daily Cleanup (Alerts)",
+      "branch": "main",
+      "commit_msg": "Daily Cleanup (Alerts)",
+      "commit_date": "2026-03-02 02:10",
+      "duration": "9s",
+      "workflow": "Daily Cleanup (Alerts)"
     },
     {
       "name": "sc-polygon-proxy",
@@ -887,13 +872,28 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-shared/actions/runs/22153004145",
-      "run_name": "Build and Release",
+      "run_url": "https://github.com/algojj/sc-shared/actions/runs/22550886990",
+      "run_name": "CI",
       "branch": "main",
-      "commit_msg": "fix: json.dumps default=str for Decimal compat in RedisClient",
-      "commit_date": "2026-02-18 15:45",
-      "duration": "42s",
-      "workflow": "Build and Release"
+      "commit_msg": "fix: setup.py reads version from VERSION file instead of hardcoded 1.2.0",
+      "commit_date": "2026-03-01 16:31",
+      "duration": "20s",
+      "workflow": "CI"
+    },
+    {
+      "name": "sc-websocket-broadcast",
+      "url": "https://github.com/algojj/sc-websocket-broadcast",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-websocket-broadcast/actions/runs/22550287635",
+      "run_name": "CI",
+      "branch": "main",
+      "commit_msg": "docs: clarify Redis-to-WebSocket relay vs polygon-proxy",
+      "commit_date": "2026-03-01 15:59",
+      "duration": "52s",
+      "workflow": "CI"
     }
   ]
 }
