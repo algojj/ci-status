@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-02 10:36:08",
+  "timestamp": "2026-03-02 11:29:50",
   "total": 60,
   "counts": {
     "failure": 23,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 33
+    "success": 32
   },
   "repos": [
     {
@@ -361,13 +361,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22578375493",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22580422626",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-02 10:35",
-      "duration": "4s",
+      "commit_date": "2026-03-02 11:29",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22579353634",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-03-02 11:01",
+      "duration": "3s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -714,21 +729,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22562337323",
-      "run_name": "Daily Cleanup (Alerts)",
-      "branch": "main",
-      "commit_msg": "Daily Cleanup (Alerts)",
-      "commit_date": "2026-03-02 02:10",
-      "duration": "9s",
-      "workflow": "Daily Cleanup (Alerts)"
     },
     {
       "name": "sc-polygon-proxy",
