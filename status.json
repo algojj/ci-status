@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-02 14:06:48",
+  "timestamp": "2026-03-02 14:59:48",
   "total": 60,
   "counts": {
     "failure": 23,
-    "running": 4,
-    "cancelled": 3,
+    "running": 1,
+    "cancelled": 1,
     "no_ci": 2,
-    "success": 28
+    "success": 33
   },
   "repos": [
     {
@@ -355,79 +355,19 @@
       "workflow": "Release"
     },
     {
-      "name": "STRAT-030",
-      "url": "https://github.com/algojj/STRAT-030",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22585258331",
-      "run_name": "Deploy",
-      "branch": "v1.0.3",
-      "commit_msg": "v1.0.3 - Fix ticker_metadata \u2192 companies table reference",
-      "commit_date": "2026-03-02 13:27",
-      "duration": "34m 30s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22586826250",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22588862791",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-02 14:06",
-      "duration": "5s",
+      "commit_date": "2026-03-02 14:59",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-scanner-multiday",
-      "url": "https://github.com/algojj/sc-scanner-multiday",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22585711281",
-      "run_name": "Deploy",
-      "branch": "v3.25.6",
-      "commit_msg": "v3.25.6 - Fix ticker_metadata \u2192 companies table reference",
-      "commit_date": "2026-03-02 13:38",
-      "duration": "22m 56s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-scanner-premarket",
-      "url": "https://github.com/algojj/sc-scanner-premarket",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/22585252951",
-      "run_name": "Deploy",
-      "branch": "v3.27.2",
-      "commit_msg": "v3.27.2 - Fix ticker_metadata \u2192 companies table reference",
-      "commit_date": "2026-03-02 13:27",
-      "duration": "36m 19s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-algo-mfl",
-      "url": "https://github.com/algojj/sc-algo-mfl",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22585254368",
-      "run_name": "Deploy",
-      "branch": "v3.25.2",
-      "commit_msg": "v3.25.2 - Fix LongSignal missing risk_reward args",
-      "commit_date": "2026-03-02 13:27",
-      "duration": "35m 25s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-jobs",
@@ -443,21 +383,6 @@
       "commit_date": "2026-02-18 19:03",
       "duration": "34m 25s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22585825354",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-02 13:41",
-      "duration": "12m 53s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-database",
@@ -518,6 +443,21 @@
       "commit_msg": "v1.1.0 - trade persistence",
       "commit_date": "2026-02-13 14:29",
       "duration": "10m 0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "STRAT-030",
+      "url": "https://github.com/algojj/STRAT-030",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22585258331",
+      "run_name": "Deploy",
+      "branch": "v1.0.3",
+      "commit_msg": "v1.0.3 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "45m 35s",
       "workflow": "Deploy"
     },
     {
@@ -593,6 +533,21 @@
       "commit_msg": "v1.3.2 - Fix watchlist date lookup (actual fix)",
       "commit_date": "2026-02-20 09:13",
       "duration": "57s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-mfl",
+      "url": "https://github.com/algojj/sc-algo-mfl",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22587026741",
+      "run_name": "Deploy",
+      "branch": "v3.25.2",
+      "commit_msg": "v3.25.2 - Fix LongSignal missing risk_reward args",
+      "commit_date": "2026-03-02 14:11",
+      "duration": "11m 31s",
       "workflow": "Deploy"
     },
     {
@@ -761,6 +716,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22588196322",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-02 14:42",
+      "duration": "11m 19s",
+      "workflow": "DilutionTracker Scraper"
+    },
+    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -848,6 +818,36 @@
       "commit_msg": "Deploy",
       "commit_date": "2026-02-18 15:46",
       "duration": "17m 55s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-scanner-multiday",
+      "url": "https://github.com/algojj/sc-scanner-multiday",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22587031117",
+      "run_name": "Deploy",
+      "branch": "v3.25.6",
+      "commit_msg": "v3.25.6 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 14:11",
+      "duration": "10m 27s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-scanner-premarket",
+      "url": "https://github.com/algojj/sc-scanner-premarket",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/22585252951",
+      "run_name": "Deploy",
+      "branch": "v3.27.2",
+      "commit_msg": "v3.27.2 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "45m 35s",
       "workflow": "Deploy"
     },
     {
