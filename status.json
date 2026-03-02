@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-02 13:03:59",
+  "timestamp": "2026-03-02 14:06:48",
   "total": 60,
   "counts": {
     "failure": 23,
-    "running": 2,
-    "cancelled": 1,
+    "running": 4,
+    "cancelled": 3,
     "no_ci": 2,
-    "success": 32
+    "success": 28
   },
   "repos": [
     {
@@ -355,34 +355,79 @@
       "workflow": "Release"
     },
     {
+      "name": "STRAT-030",
+      "url": "https://github.com/algojj/STRAT-030",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22585258331",
+      "run_name": "Deploy",
+      "branch": "v1.0.3",
+      "commit_msg": "v1.0.3 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "34m 30s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22584311446",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22586826250",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-02 13:03",
-      "duration": "4s",
+      "commit_date": "2026-03-02 14:06",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
+      "name": "sc-scanner-multiday",
+      "url": "https://github.com/algojj/sc-scanner-multiday",
       "private": true,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22584247305",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-02 13:01",
-      "duration": "0s",
-      "workflow": "Flash Research Scraper"
+      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22585711281",
+      "run_name": "Deploy",
+      "branch": "v3.25.6",
+      "commit_msg": "v3.25.6 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 13:38",
+      "duration": "22m 56s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-scanner-premarket",
+      "url": "https://github.com/algojj/sc-scanner-premarket",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/22585252951",
+      "run_name": "Deploy",
+      "branch": "v3.27.2",
+      "commit_msg": "v3.27.2 - Fix ticker_metadata \u2192 companies table reference",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "36m 19s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-mfl",
+      "url": "https://github.com/algojj/sc-algo-mfl",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22585254368",
+      "run_name": "Deploy",
+      "branch": "v3.25.2",
+      "commit_msg": "v3.25.2 - Fix LongSignal missing risk_reward args",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "35m 25s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-jobs",
@@ -398,6 +443,21 @@
       "commit_date": "2026-02-18 19:03",
       "duration": "34m 25s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22585825354",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-02 13:41",
+      "duration": "12m 53s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-database",
@@ -458,21 +518,6 @@
       "commit_msg": "v1.1.0 - trade persistence",
       "commit_date": "2026-02-13 14:29",
       "duration": "10m 0s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "STRAT-030",
-      "url": "https://github.com/algojj/STRAT-030",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22076246955",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "release: v1.1.0 \u2014 MktCap 150M + diagnostic logs",
-      "commit_date": "2026-02-16 17:11",
-      "duration": "12m 48s",
       "workflow": "Deploy"
     },
     {
@@ -551,21 +596,6 @@
       "workflow": "Deploy"
     },
     {
-      "name": "sc-algo-mfl",
-      "url": "https://github.com/algojj/sc-algo-mfl",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22153023843",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "13m 58s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-algo-super-para",
       "url": "https://github.com/algojj/sc-algo-super-para",
       "private": true,
@@ -587,12 +617,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22550891889",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22585268971",
       "run_name": "Deploy",
-      "branch": "v3.28.34",
-      "commit_msg": "v3.28.34 - Correlation ID middleware (X-Request-ID)",
-      "commit_date": "2026-03-01 16:31",
-      "duration": "2m 2s",
+      "branch": "v3.28.35",
+      "commit_msg": "v3.28.35 - Fix req_id UnboundLocalError in request monitor",
+      "commit_date": "2026-03-02 13:27",
+      "duration": "2m 15s",
       "workflow": "Deploy"
     },
     {
@@ -821,36 +851,6 @@
       "workflow": "Deploy"
     },
     {
-      "name": "sc-scanner-multiday",
-      "url": "https://github.com/algojj/sc-scanner-multiday",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22153020142",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "17m 50s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-scanner-premarket",
-      "url": "https://github.com/algojj/sc-scanner-premarket",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-scanner-premarket/actions/runs/22153021097",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "10m 16s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-scanner-swing",
       "url": "https://github.com/algojj/sc-scanner-swing",
       "private": true,
@@ -872,12 +872,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-shared/actions/runs/22550886990",
+      "run_url": "https://github.com/algojj/sc-shared/actions/runs/22585225976",
       "run_name": "CI",
       "branch": "main",
-      "commit_msg": "fix: setup.py reads version from VERSION file instead of hardcoded 1.2.0",
-      "commit_date": "2026-03-01 16:31",
-      "duration": "20s",
+      "commit_msg": "fix: change db.fetch to db.fetch_all in signal_dispatcher",
+      "commit_date": "2026-03-02 13:26",
+      "duration": "18s",
       "workflow": "CI"
     },
     {
