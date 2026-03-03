@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 16:11:44",
+  "timestamp": "2026-03-03 16:52:39",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 3,
+    "running": 1,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 32
+    "success": 34
   },
   "repos": [
     {
@@ -316,43 +316,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22638606770",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22639969430",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 16:11",
-      "duration": "5s",
+      "commit_date": "2026-03-03 16:52",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-algo-climax",
-      "url": "https://github.com/algojj/sc-algo-climax",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-algo-climax/actions/runs/22630400958",
-      "run_name": "Deploy",
-      "branch": "v3.26.0",
-      "commit_msg": "v3.26.0 - Trade persistence for dashboard",
-      "commit_date": "2026-03-03 12:37",
-      "duration": "2h 43m",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ms-midday",
-      "url": "https://github.com/algojj/sc-ms-midday",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/22630411882",
-      "run_name": "Deploy",
-      "branch": "v3.28.0",
-      "commit_msg": "v3.28.0 - Trade persistence + webhook fix",
-      "commit_date": "2026-03-03 12:37",
-      "duration": "2h 43m",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-algo-bht",
@@ -506,6 +476,21 @@
       "workflow": "Proof HTML"
     },
     {
+      "name": "sc-algo-climax",
+      "url": "https://github.com/algojj/sc-algo-climax",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-climax/actions/runs/22630400958",
+      "run_name": "Deploy",
+      "branch": "v3.26.0",
+      "commit_msg": "v3.26.0 - Trade persistence for dashboard",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "3h 44m",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-algo-early-bird-short",
       "url": "https://github.com/algojj/sc-algo-early-bird-short",
       "private": true,
@@ -656,6 +641,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ms-midday",
+      "url": "https://github.com/algojj/sc-ms-midday",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/22630411882",
+      "run_name": "Deploy",
+      "branch": "v3.28.0",
+      "commit_msg": "v3.28.0 - Trade persistence + webhook fix",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "3h 44m",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ms-polygon",
       "url": "https://github.com/algojj/sc-ms-polygon",
       "private": true,
@@ -707,12 +707,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22637784537",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22639457258",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-03 15:42",
-      "duration": "11m 5s",
+      "commit_date": "2026-03-03 16:36",
+      "duration": "11m 56s",
       "workflow": "DilutionTracker Scraper"
     },
     {
