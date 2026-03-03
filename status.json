@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 20:00:18",
+  "timestamp": "2026-03-03 20:38:13",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 4,
+    "running": 2,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 31
+    "success": 33
   },
   "repos": [
     {
@@ -310,49 +310,19 @@
       "workflow": "Release"
     },
     {
-      "name": "STRAT-030",
-      "url": "https://github.com/algojj/STRAT-030",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22640337913",
-      "run_name": "Deploy",
-      "branch": "v1.4.0",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-03-03 17:02",
-      "duration": "2h 25m",
-      "workflow": "Deploy"
-    },
-    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22646701060",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22647841069",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 19:59",
+      "commit_date": "2026-03-03 20:37",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-algo-early-bird-short",
-      "url": "https://github.com/algojj/sc-algo-early-bird-short",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-algo-early-bird-short/actions/runs/22640353349",
-      "run_name": "Deploy",
-      "branch": "v1.4.0",
-      "commit_msg": "v1.4.0 - Add trade persistence for strategy dashboard",
-      "commit_date": "2026-03-03 17:03",
-      "duration": "2h 25m",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -361,13 +331,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22646471380",
-      "run_name": "DilutionTracker Scraper",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22647620776",
+      "run_name": "Flash Research Scraper",
       "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-03 19:52",
-      "duration": "2s",
-      "workflow": "DilutionTracker Scraper"
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-03-03 20:30",
+      "duration": "0s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-algo-bht",
@@ -476,6 +446,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "STRAT-030",
+      "url": "https://github.com/algojj/STRAT-030",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/STRAT-030/actions/runs/22640337913",
+      "run_name": "Deploy",
+      "branch": "v1.4.0",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-03-03 17:02",
+      "duration": "3h 28m",
+      "workflow": "Deploy"
+    },
+    {
       "name": "STRAT-034",
       "url": "https://github.com/algojj/STRAT-034",
       "private": true,
@@ -518,6 +503,21 @@
       "commit_msg": "v3.26.0 - Trade persistence for dashboard",
       "commit_date": "2026-03-03 12:37",
       "duration": "3h 44m",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-early-bird-short",
+      "url": "https://github.com/algojj/sc-algo-early-bird-short",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-early-bird-short/actions/runs/22640353349",
+      "run_name": "Deploy",
+      "branch": "v1.4.0",
+      "commit_msg": "v1.4.0 - Add trade persistence for strategy dashboard",
+      "commit_date": "2026-03-03 17:03",
+      "duration": "3h 27m",
       "workflow": "Deploy"
     },
     {
