@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 11:30:55",
+  "timestamp": "2026-03-03 12:33:54",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 3,
-    "cancelled": 1,
+    "running": 2,
+    "cancelled": 3,
     "no_ci": 2,
-    "success": 34
+    "success": 33
   },
   "repos": [
     {
@@ -316,28 +316,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22627590762",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22630241872",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 11:30",
-      "duration": "5s",
+      "commit_date": "2026-03-03 12:33",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-algo-bht",
-      "url": "https://github.com/algojj/sc-algo-bht",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22627301129",
-      "run_name": "Deploy",
-      "branch": "v1.1.1",
-      "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
-      "commit_date": "2026-03-03 11:23",
-      "duration": "0s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -346,13 +331,43 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22626401975",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22629368508",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-03 11:00",
-      "duration": "4s",
+      "commit_date": "2026-03-03 12:12",
+      "duration": "3s",
       "workflow": "Flash Research Scraper"
+    },
+    {
+      "name": "sc-algo-bht",
+      "url": "https://github.com/algojj/sc-algo-bht",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22627301129",
+      "run_name": "Deploy",
+      "branch": "v1.1.1",
+      "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
+      "commit_date": "2026-03-03 11:23",
+      "duration": "43m 12s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "cancelled",
+      "status_label": "Cancelled",
+      "status_icon": "\u23f9\ufe0f",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22628239277",
+      "run_name": "Deploy",
+      "branch": "v3.23.2",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-03-03 11:45",
+      "duration": "4m 56s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-jobs",
@@ -512,12 +527,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22594741181",
+      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22629096548",
       "run_name": "Deploy",
-      "branch": "v3.25.2",
-      "commit_msg": "v3.25.2 - Remove dead WebhookClient",
-      "commit_date": "2026-03-02 17:39",
-      "duration": "6h 46m",
+      "branch": "main",
+      "commit_msg": "Deploy",
+      "commit_date": "2026-03-03 12:06",
+      "duration": "5m 18s",
       "workflow": "Deploy"
     },
     {
@@ -548,21 +563,6 @@
       "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
       "commit_date": "2026-03-03 11:23",
       "duration": "7m 11s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22627305959",
-      "run_name": "Deploy",
-      "branch": "v3.28.42",
-      "commit_msg": "v3.28.42 - Fix avg_pnl excluding EXPIRED",
-      "commit_date": "2026-03-03 11:23",
-      "duration": "7m 7s",
       "workflow": "Deploy"
     },
     {
