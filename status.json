@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 10:33:41",
+  "timestamp": "2026-03-03 11:30:55",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 1,
+    "running": 3,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 36
+    "success": 34
   },
   "repos": [
     {
@@ -316,13 +316,43 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22625324136",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22627590762",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 10:33",
-      "duration": "4s",
+      "commit_date": "2026-03-03 11:30",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-algo-bht",
+      "url": "https://github.com/algojj/sc-algo-bht",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22627301129",
+      "run_name": "Deploy",
+      "branch": "v1.1.1",
+      "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
+      "commit_date": "2026-03-03 11:23",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22626401975",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-03-03 11:00",
+      "duration": "4s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-ms-jobs",
@@ -446,21 +476,6 @@
       "workflow": "Proof HTML"
     },
     {
-      "name": "sc-algo-bht",
-      "url": "https://github.com/algojj/sc-algo-bht",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22365802842",
-      "run_name": "Deploy",
-      "branch": "v3.27.7",
-      "commit_msg": "v3.27.7 - TP below LOD filter",
-      "commit_date": "2026-02-24 16:04",
-      "duration": "30m 48s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-algo-climax",
       "url": "https://github.com/algojj/sc-algo-climax",
       "private": true,
@@ -527,12 +542,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22366806310",
+      "run_url": "https://github.com/algojj/sc-algo-super-para/actions/runs/22627307720",
       "run_name": "Deploy",
-      "branch": "v1.1.0",
-      "commit_msg": "v1.1.0 - Trade management (SL/TP/MaxLoss/EOD)",
-      "commit_date": "2026-02-24 16:32",
-      "duration": "1m 36s",
+      "branch": "v1.1.1",
+      "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
+      "commit_date": "2026-03-03 11:23",
+      "duration": "7m 11s",
       "workflow": "Deploy"
     },
     {
@@ -542,12 +557,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22625214658",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22627305959",
       "run_name": "Deploy",
-      "branch": "v3.28.38",
-      "commit_msg": "v3.28.38 - Strategy Trades Dashboard",
-      "commit_date": "2026-03-03 10:30",
-      "duration": "2m 5s",
+      "branch": "v3.28.42",
+      "commit_msg": "v3.28.42 - Fix avg_pnl excluding EXPIRED",
+      "commit_date": "2026-03-03 11:23",
+      "duration": "7m 7s",
       "workflow": "Deploy"
     },
     {
@@ -699,21 +714,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22610660936",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-03 03:06",
-      "duration": "42m 41s",
-      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-polygon-proxy",
