@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 09:02:03",
+  "timestamp": "2026-03-03 10:33:41",
   "total": 60,
   "counts": {
-    "failure": 21,
+    "failure": 20,
     "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 35
+    "success": 36
   },
   "repos": [
     {
@@ -280,21 +280,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-web",
-      "url": "https://github.com/algojj/sc-web",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/22550286546",
-      "run_name": "CI",
-      "branch": "main",
-      "commit_msg": "chore: update package-lock.json",
-      "commit_date": "2026-03-01 15:59",
-      "duration": "15s",
-      "workflow": "CI"
-    },
-    {
       "name": "sc-webhooks",
       "url": "https://github.com/algojj/sc-webhooks",
       "private": true,
@@ -331,11 +316,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22622067235",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22625324136",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 09:01",
+      "commit_date": "2026-03-03 10:33",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
@@ -557,12 +542,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22585268971",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22625214658",
       "run_name": "Deploy",
-      "branch": "v3.28.35",
-      "commit_msg": "v3.28.35 - Fix req_id UnboundLocalError in request monitor",
-      "commit_date": "2026-03-02 13:27",
-      "duration": "2m 15s",
+      "branch": "v3.28.38",
+      "commit_msg": "v3.28.38 - Strategy Trades Dashboard",
+      "commit_date": "2026-03-03 10:30",
+      "duration": "2m 5s",
       "workflow": "Deploy"
     },
     {
@@ -879,6 +864,21 @@
       "commit_date": "2026-03-02 13:26",
       "duration": "18s",
       "workflow": "CI"
+    },
+    {
+      "name": "sc-web",
+      "url": "https://github.com/algojj/sc-web",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22625227739",
+      "run_name": "Deploy",
+      "branch": "v3.23.5",
+      "commit_msg": "v3.23.5 - Strategy Trades opens standalone dashboard",
+      "commit_date": "2026-03-03 10:30",
+      "duration": "1m 39s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-websocket-broadcast",
