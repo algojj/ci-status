@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 12:33:54",
+  "timestamp": "2026-03-03 13:29:04",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 2,
+    "running": 6,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 33
+    "success": 29
   },
   "repos": [
     {
@@ -316,13 +316,73 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22630241872",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22632562068",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 12:33",
-      "duration": "4s",
+      "commit_date": "2026-03-03 13:28",
+      "duration": "6s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-algo-climax",
+      "url": "https://github.com/algojj/sc-algo-climax",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-climax/actions/runs/22630400958",
+      "run_name": "Deploy",
+      "branch": "v3.26.0",
+      "commit_msg": "v3.26.0 - Trade persistence for dashboard",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-gus",
+      "url": "https://github.com/algojj/sc-algo-gus",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22630398303",
+      "run_name": "Deploy",
+      "branch": "v3.26.0",
+      "commit_msg": "v3.26.0 - Trade persistence for dashboard",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "38m 33s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-algo-mfl",
+      "url": "https://github.com/algojj/sc-algo-mfl",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22630399836",
+      "run_name": "Deploy",
+      "branch": "v3.26.0",
+      "commit_msg": "v3.26.0 - Trade persistence for dashboard",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "38m 12s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ms-midday",
+      "url": "https://github.com/algojj/sc-ms-midday",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/22630411882",
+      "run_name": "Deploy",
+      "branch": "v3.28.0",
+      "commit_msg": "v3.28.0 - Trade persistence + webhook fix",
+      "commit_date": "2026-03-03 12:37",
+      "duration": "0s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -331,12 +391,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22629368508",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22631710053",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-03 12:12",
-      "duration": "3s",
+      "commit_date": "2026-03-03 13:07",
+      "duration": "7m 54s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -491,21 +551,6 @@
       "workflow": "Proof HTML"
     },
     {
-      "name": "sc-algo-climax",
-      "url": "https://github.com/algojj/sc-algo-climax",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-climax/actions/runs/22153024965",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-02-18 15:46",
-      "duration": "19m 29s",
-      "workflow": "Deploy"
-    },
-    {
       "name": "sc-algo-early-bird-short",
       "url": "https://github.com/algojj/sc-algo-early-bird-short",
       "private": true,
@@ -518,36 +563,6 @@
       "commit_msg": "v1.3.2 - Fix watchlist date lookup (actual fix)",
       "commit_date": "2026-02-20 09:13",
       "duration": "57s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-algo-gus",
-      "url": "https://github.com/algojj/sc-algo-gus",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-gus/actions/runs/22629096548",
-      "run_name": "Deploy",
-      "branch": "main",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-03-03 12:06",
-      "duration": "5m 18s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-algo-mfl",
-      "url": "https://github.com/algojj/sc-algo-mfl",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-mfl/actions/runs/22587026741",
-      "run_name": "Deploy",
-      "branch": "v3.25.2",
-      "commit_msg": "v3.25.2 - Fix LongSignal missing risk_reward args",
-      "commit_date": "2026-03-02 14:11",
-      "duration": "11m 31s",
       "workflow": "Deploy"
     },
     {
@@ -654,21 +669,6 @@
       "commit_date": "2026-03-01 15:58",
       "duration": "1m 8s",
       "workflow": "CI"
-    },
-    {
-      "name": "sc-ms-midday",
-      "url": "https://github.com/algojj/sc-ms-midday",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-midday/actions/runs/22594740847",
-      "run_name": "Deploy",
-      "branch": "v3.27.1",
-      "commit_msg": "v3.27.1 - Remove dead WebhookClient",
-      "commit_date": "2026-03-02 17:39",
-      "duration": "1h 30m",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ms-polygon",
