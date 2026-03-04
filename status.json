@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-04 15:59:35",
+  "timestamp": "2026-03-04 16:45:21",
   "total": 60,
   "counts": {
     "failure": 19,
-    "running": 4,
+    "running": 6,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 32
+    "success": 30
   },
   "repos": [
     {
@@ -306,7 +306,7 @@
       "branch": "v1.1.2",
       "commit_msg": "v1.1.2 - Fix dead webhook calls",
       "commit_date": "2026-03-04 15:44",
-      "duration": "0s",
+      "duration": "16m 54s",
       "workflow": "Deploy"
     },
     {
@@ -325,18 +325,48 @@
       "workflow": "Deploy"
     },
     {
+      "name": "STRAT-029",
+      "url": "https://github.com/algojj/STRAT-029",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/STRAT-029/actions/runs/22684765342",
+      "run_name": "Deploy",
+      "branch": "v1.1.2",
+      "commit_msg": "v1.1.2 - Fix dead webhook calls",
+      "commit_date": "2026-03-04 16:05",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "STRAT-034",
+      "url": "https://github.com/algojj/STRAT-034",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/STRAT-034/actions/runs/22684769604",
+      "run_name": "Deploy",
+      "branch": "v1.1.2",
+      "commit_msg": "v1.1.2 - Fix dead webhook calls",
+      "commit_date": "2026-03-04 16:05",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "ci-status",
       "url": "https://github.com/algojj/ci-status",
       "private": false,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22684512019",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22686226379",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-04 15:59",
-      "duration": "11s",
+      "commit_date": "2026-03-04 16:44",
+      "duration": "10s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -346,11 +376,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22684386437",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22686051821",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-04 15:55",
+      "commit_date": "2026-03-04 16:40",
       "duration": "0s",
       "workflow": "Flash Research Scraper"
     },
@@ -416,21 +446,6 @@
       "status_icon": "\u26a0\ufe0f"
     },
     {
-      "name": "STRAT-029",
-      "url": "https://github.com/algojj/STRAT-029",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/STRAT-029/actions/runs/22594744490",
-      "run_name": "Deploy",
-      "branch": "v1.1.1",
-      "commit_msg": "v1.1.1 - Remove dead WebhookClient",
-      "commit_date": "2026-03-02 17:39",
-      "duration": "3h 49m",
-      "workflow": "Deploy"
-    },
-    {
       "name": "STRAT-030",
       "url": "https://github.com/algojj/STRAT-030",
       "private": true,
@@ -443,21 +458,6 @@
       "commit_msg": "Deploy",
       "commit_date": "2026-03-03 17:02",
       "duration": "3h 28m",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "STRAT-034",
-      "url": "https://github.com/algojj/STRAT-034",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/STRAT-034/actions/runs/22594736608",
-      "run_name": "Deploy",
-      "branch": "v1.1.1",
-      "commit_msg": "v1.1.1 - Remove dead WebhookClient",
-      "commit_date": "2026-03-02 17:39",
-      "duration": "5h 27m",
       "workflow": "Deploy"
     },
     {
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22683476022",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22686086338",
       "run_name": "Release",
-      "branch": "v1.13.2",
-      "commit_msg": "fix: respect signal SL always, use grace period instead of direction \u2026",
-      "commit_date": "2026-03-04 15:31",
-      "duration": "2m 51s",
+      "branch": "v1.13.7",
+      "commit_msg": "fix: signal records stuck as 'Active' after position closed",
+      "commit_date": "2026-03-04 16:41",
+      "duration": "4m 13s",
       "workflow": "Release"
     }
   ]
