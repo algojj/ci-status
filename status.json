@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-04 18:45:23",
+  "timestamp": "2026-03-04 19:16:46",
   "total": 60,
   "counts": {
     "failure": 21,
-    "running": 2,
+    "running": 1,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 32
+    "success": 33
   },
   "repos": [
     {
@@ -331,28 +331,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22690805866",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22691984633",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-04 18:44",
-      "duration": "4s",
+      "commit_date": "2026-03-04 19:16",
+      "duration": "10s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22690619331",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-04 18:40",
-      "duration": "5s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-algo-bht",
@@ -701,6 +686,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22690619331",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-04 18:40",
+      "duration": "11m 15s",
+      "workflow": "DilutionTracker Scraper"
+    },
+    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22689981012",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22690891530",
       "run_name": "Release",
-      "branch": "v1.13.10",
-      "commit_msg": "fix: 5 bugs in Pushover callback + max loss implementation",
-      "commit_date": "2026-03-04 18:23",
-      "duration": "3m 3s",
+      "branch": "v1.13.11",
+      "commit_msg": "fix: critical \u2014 global max-loss kill switch was bypassed in signal pr\u2026",
+      "commit_date": "2026-03-04 18:47",
+      "duration": "3m 40s",
       "workflow": "Release"
     }
   ]
