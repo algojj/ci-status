@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-03 20:59:47",
+  "timestamp": "2026-03-04 08:36:20",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 2,
+    "running": 1,
     "cancelled": 3,
     "no_ci": 2,
-    "success": 33
+    "success": 34
   },
   "repos": [
     {
@@ -316,28 +316,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22648442604",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22667636304",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-03 20:59",
-      "duration": "5s",
-      "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22648169266",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-03 20:49",
+      "commit_date": "2026-03-04 08:35",
       "duration": "4s",
-      "workflow": "DilutionTracker Scraper"
+      "workflow": "CI Status Dashboard"
     },
     {
       "name": "sc-algo-bht",
@@ -714,6 +699,21 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22657290249",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-04 03:03",
+      "duration": "11m 12s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
