@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-04 16:45:21",
+  "timestamp": "2026-03-04 17:19:14",
   "total": 60,
   "counts": {
     "failure": 19,
@@ -306,7 +306,7 @@
       "branch": "v1.1.2",
       "commit_msg": "v1.1.2 - Fix dead webhook calls",
       "commit_date": "2026-03-04 15:44",
-      "duration": "16m 54s",
+      "duration": "1h 18m",
       "workflow": "Deploy"
     },
     {
@@ -321,7 +321,7 @@
       "branch": "v1.1.2",
       "commit_msg": "v1.1.2 - Fix shares_outstanding + webhook errors",
       "commit_date": "2026-03-04 15:45",
-      "duration": "0s",
+      "duration": "1h 20m",
       "workflow": "Deploy"
     },
     {
@@ -336,7 +336,7 @@
       "branch": "v1.1.2",
       "commit_msg": "v1.1.2 - Fix dead webhook calls",
       "commit_date": "2026-03-04 16:05",
-      "duration": "0s",
+      "duration": "57m 49s",
       "workflow": "Deploy"
     },
     {
@@ -351,7 +351,7 @@
       "branch": "v1.1.2",
       "commit_msg": "v1.1.2 - Fix dead webhook calls",
       "commit_date": "2026-03-04 16:05",
-      "duration": "0s",
+      "duration": "58m 48s",
       "workflow": "Deploy"
     },
     {
@@ -361,11 +361,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22686226379",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22687478012",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-04 16:44",
+      "commit_date": "2026-03-04 17:18",
       "duration": "10s",
       "workflow": "CI Status Dashboard"
     },
@@ -381,7 +381,7 @@
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
       "commit_date": "2026-03-04 16:40",
-      "duration": "0s",
+      "duration": "26m 51s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22686086338",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22686313465",
       "run_name": "Release",
-      "branch": "v1.13.7",
-      "commit_msg": "fix: signal records stuck as 'Active' after position closed",
-      "commit_date": "2026-03-04 16:41",
-      "duration": "4m 13s",
+      "branch": "v1.13.8",
+      "commit_msg": "feat: upgrade Pushover notifications with HTML, URL, TTL, timestamps",
+      "commit_date": "2026-03-04 16:47",
+      "duration": "3m 22s",
       "workflow": "Release"
     }
   ]
