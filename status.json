@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-05 10:38:04",
+  "timestamp": "2026-03-05 11:31:50",
   "total": 60,
   "counts": {
-    "failure": 22,
-    "running": 1,
+    "failure": 21,
+    "running": 2,
     "cancelled": 2,
     "no_ci": 2,
     "success": 33
@@ -280,21 +280,6 @@
       "workflow": "CI"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "failure",
-      "status_label": "Failing",
-      "status_icon": "\u274c",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22704802702",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-05 03:06",
-      "duration": "1m 12s",
-      "workflow": "DilutionTracker Scraper"
-    },
-    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -346,13 +331,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22720465204",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22722627877",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-05 10:37",
+      "commit_date": "2026-03-05 11:31",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22721428784",
+      "run_name": "Flash Research Scraper",
+      "branch": "main",
+      "commit_msg": "Flash Research Scraper",
+      "commit_date": "2026-03-05 11:02",
+      "duration": "4s",
+      "workflow": "Flash Research Scraper"
     },
     {
       "name": "sc-algo-bht",
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22719106627",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22720959900",
       "run_name": "Release",
-      "branch": "v1.13.20",
-      "commit_msg": "fix: show WS URL in PRICE BLIND alerts for easier debugging",
-      "commit_date": "2026-03-05 10:00",
-      "duration": "3m 13s",
+      "branch": "v1.13.21",
+      "commit_msg": "fix: dynamic WS read timeout \u2014 30s market hours, 5min off-hours",
+      "commit_date": "2026-03-05 10:50",
+      "duration": "3m 58s",
       "workflow": "Release"
     }
   ]
