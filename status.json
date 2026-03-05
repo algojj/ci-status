@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-05 09:03:30",
+  "timestamp": "2026-03-05 10:38:04",
   "total": 60,
   "counts": {
     "failure": 22,
@@ -346,11 +346,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22717009282",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22720465204",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-05 09:02",
+      "commit_date": "2026-03-05 10:37",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -797,12 +797,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22594744104",
+      "run_url": "https://github.com/algojj/sc-scanner-multiday/actions/runs/22717608033",
       "run_name": "Deploy",
-      "branch": "v3.25.7",
-      "commit_msg": "v3.25.7 - Remove dead WebhookClient",
-      "commit_date": "2026-03-02 17:39",
-      "duration": "4h 46m",
+      "branch": "v3.25.8",
+      "commit_msg": "v3.25.8 - Fix dead self.webhook AttributeError",
+      "commit_date": "2026-03-05 09:19",
+      "duration": "3m 21s",
       "workflow": "Deploy"
     },
     {
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22705923241",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22719106627",
       "run_name": "Release",
-      "branch": "v1.13.19",
-      "commit_msg": "chore: use feed.quantradar.io domain instead of raw IP for WS proxy",
-      "commit_date": "2026-03-05 03:46",
-      "duration": "3m 9s",
+      "branch": "v1.13.20",
+      "commit_msg": "fix: show WS URL in PRICE BLIND alerts for easier debugging",
+      "commit_date": "2026-03-05 10:00",
+      "duration": "3m 13s",
       "workflow": "Release"
     }
   ]
