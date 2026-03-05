@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-04 21:00:01",
+  "timestamp": "2026-03-05 08:38:59",
   "total": 60,
   "counts": {
-    "failure": 21,
+    "failure": 22,
     "running": 1,
-    "cancelled": 3,
+    "cancelled": 2,
     "no_ci": 2,
     "success": 33
   },
@@ -280,6 +280,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22704802702",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-05 03:06",
+      "duration": "1m 12s",
+      "workflow": "DilutionTracker Scraper"
+    },
+    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -331,12 +346,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22695362595",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22716140106",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-04 20:59",
-      "duration": "4s",
+      "commit_date": "2026-03-05 08:38",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -352,21 +367,6 @@
       "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
       "commit_date": "2026-03-03 11:23",
       "duration": "43m 12s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22628239277",
-      "run_name": "Deploy",
-      "branch": "v3.23.2",
-      "commit_msg": "Deploy",
-      "commit_date": "2026-03-03 11:45",
-      "duration": "4m 56s",
       "workflow": "Deploy"
     },
     {
@@ -536,6 +536,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22705142817",
+      "run_name": "Deploy",
+      "branch": "v3.28.45",
+      "commit_msg": "v3.28.45 - Add Google Analytics to all pages",
+      "commit_date": "2026-03-05 03:18",
+      "duration": "6m 17s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-journal",
       "url": "https://github.com/algojj/sc-journal",
       "private": true,
@@ -684,21 +699,6 @@
       "commit_date": "2026-02-18 08:40",
       "duration": "53s",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22694632699",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-04 20:35",
-      "duration": "10m 37s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
@@ -857,12 +857,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/22625227739",
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22705187218",
       "run_name": "Deploy",
-      "branch": "v3.23.5",
-      "commit_msg": "v3.23.5 - Strategy Trades opens standalone dashboard",
-      "commit_date": "2026-03-03 10:30",
-      "duration": "1m 39s",
+      "branch": "v3.23.8",
+      "commit_msg": "v3.23.8 - Add Google Analytics",
+      "commit_date": "2026-03-05 03:20",
+      "duration": "4m 23s",
       "workflow": "Deploy"
     },
     {
@@ -887,12 +887,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22690891530",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22705923241",
       "run_name": "Release",
-      "branch": "v1.13.11",
-      "commit_msg": "fix: critical \u2014 global max-loss kill switch was bypassed in signal pr\u2026",
-      "commit_date": "2026-03-04 18:47",
-      "duration": "3m 40s",
+      "branch": "v1.13.19",
+      "commit_msg": "chore: use feed.quantradar.io domain instead of raw IP for WS proxy",
+      "commit_date": "2026-03-05 03:46",
+      "duration": "3m 9s",
       "workflow": "Release"
     }
   ]
