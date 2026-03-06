@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-06 16:49:29",
+  "timestamp": "2026-03-06 17:38:59",
   "total": 60,
   "counts": {
     "failure": 21,
-    "running": 2,
+    "running": 3,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 33
+    "success": 32
   },
   "repos": [
     {
@@ -331,12 +331,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22779400337",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22781062785",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-06 16:49",
-      "duration": "5s",
+      "commit_date": "2026-03-06 17:38",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -346,13 +346,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22778953464",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22780966321",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-06 16:35",
+      "commit_date": "2026-03-06 17:35",
       "duration": "0s",
       "workflow": "Flash Research Scraper"
+    },
+    {
+      "name": "signal-executor",
+      "url": "https://github.com/algojj/signal-executor",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22780439379",
+      "run_name": "Release",
+      "branch": "v1.13.22",
+      "commit_msg": "fix: flatten newlines in Pushover log for readable audit trail",
+      "commit_date": "2026-03-06 17:19",
+      "duration": "0s",
+      "workflow": "Release"
     },
     {
       "name": "sc-algo-bht",
@@ -879,21 +894,6 @@
       "commit_date": "2026-03-01 15:59",
       "duration": "52s",
       "workflow": "CI"
-    },
-    {
-      "name": "signal-executor",
-      "url": "https://github.com/algojj/signal-executor",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22720959900",
-      "run_name": "Release",
-      "branch": "v1.13.21",
-      "commit_msg": "fix: dynamic WS read timeout \u2014 30s market hours, 5min off-hours",
-      "commit_date": "2026-03-05 10:50",
-      "duration": "3m 58s",
-      "workflow": "Release"
     }
   ]
 }
