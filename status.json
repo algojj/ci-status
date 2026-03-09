@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-09 17:00:50",
+  "timestamp": "2026-03-09 17:51:48",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 3,
+    "running": 4,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 33
+    "success": 32
   },
   "repos": [
     {
@@ -316,12 +316,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22872211751",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22874204813",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-09 17:00",
-      "duration": "5s",
+      "commit_date": "2026-03-09 17:51",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -340,18 +340,33 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-ms-flash",
+      "url": "https://github.com/algojj/sc-ms-flash",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22873513501",
+      "run_name": "Deploy",
+      "branch": "v1.4.0",
+      "commit_msg": "v1.4.0 - Fix Playwright timeout loop",
+      "commit_date": "2026-03-09 17:33",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-ops",
       "url": "https://github.com/algojj/sc-ops",
       "private": true,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22871548756",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22873683950",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-09 16:43",
-      "duration": "13m 1s",
+      "commit_date": "2026-03-09 17:38",
+      "duration": "0s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -593,21 +608,6 @@
       "commit_msg": "v3.26.3 - Pass filing detail fields through DD pipeline",
       "commit_date": "2026-03-09 02:36",
       "duration": "3m 12s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ms-flash",
-      "url": "https://github.com/algojj/sc-ms-flash",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22270878849",
-      "run_name": "Deploy",
-      "branch": "v3.22.5",
-      "commit_msg": "v3.22.5 - Fix expired session retry",
-      "commit_date": "2026-02-22 02:04",
-      "duration": "29m 34s",
       "workflow": "Deploy"
     },
     {
