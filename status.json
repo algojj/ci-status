@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-09 18:38:41",
+  "timestamp": "2026-03-09 19:01:27",
   "total": 60,
   "counts": {
-    "failure": 20,
-    "running": 2,
+    "failure": 21,
+    "running": 3,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 34
+    "success": 32
   },
   "repos": [
     {
@@ -265,6 +265,21 @@
       "workflow": "CI"
     },
     {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "failure",
+      "status_label": "Failing",
+      "status_icon": "\u274c",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22876619449",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-09 18:56",
+      "duration": "1m 9s",
+      "workflow": "DilutionTracker Scraper"
+    },
+    {
       "name": "sc-scanner-postmarket",
       "url": "https://github.com/algojj/sc-scanner-postmarket",
       "private": true,
@@ -316,28 +331,43 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22875980755",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22876777941",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-09 18:38",
+      "commit_date": "2026-03-09 19:00",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
+      "name": "sc-dilution-scraper",
+      "url": "https://github.com/algojj/sc-dilution-scraper",
       "private": true,
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22875900761",
-      "run_name": "Flash Research Scraper",
-      "branch": "main",
-      "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-09 18:36",
-      "duration": "4s",
-      "workflow": "Flash Research Scraper"
+      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22876719635",
+      "run_name": "Deploy",
+      "branch": "v1.6.3",
+      "commit_msg": "v1.6.3 - Fix WAF renewal killing premium session",
+      "commit_date": "2026-03-09 18:59",
+      "duration": "0s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22876192533",
+      "run_name": "Deploy",
+      "branch": "v3.28.54",
+      "commit_msg": "v3.28.54 - Fix unhashable type dict in risk gauges",
+      "commit_date": "2026-03-09 18:44",
+      "duration": "0s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-algo-bht",
@@ -518,36 +548,6 @@
       "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
       "commit_date": "2026-03-03 11:23",
       "duration": "7m 11s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-dilution-scraper",
-      "url": "https://github.com/algojj/sc-dilution-scraper",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22871935954",
-      "run_name": "Deploy",
-      "branch": "v1.6.2",
-      "commit_msg": "v1.6.2 - Prevent empty scrapes overwriting data + WAF token auto-refresh",
-      "commit_date": "2026-03-09 16:53",
-      "duration": "1h 41m",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22840565466",
-      "run_name": "Deploy",
-      "branch": "v3.28.52",
-      "commit_msg": "v3.28.52 - DT-style key metrics row + remove always-N/A fields",
-      "commit_date": "2026-03-09 03:03",
-      "duration": "1m 39s",
       "workflow": "Deploy"
     },
     {
