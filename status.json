@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-09 17:51:48",
+  "timestamp": "2026-03-09 18:38:41",
   "total": 60,
   "counts": {
     "failure": 20,
-    "running": 4,
+    "running": 2,
     "cancelled": 2,
     "no_ci": 2,
-    "success": 32
+    "success": 34
   },
   "repos": [
     {
@@ -316,43 +316,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22874204813",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22875980755",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-09 17:51",
-      "duration": "4s",
+      "commit_date": "2026-03-09 18:38",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-dilution-scraper",
-      "url": "https://github.com/algojj/sc-dilution-scraper",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22871935954",
-      "run_name": "Deploy",
-      "branch": "v1.6.2",
-      "commit_msg": "v1.6.2 - Prevent empty scrapes overwriting data + WAF token auto-refresh",
-      "commit_date": "2026-03-09 16:53",
-      "duration": "0s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ms-flash",
-      "url": "https://github.com/algojj/sc-ms-flash",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22873513501",
-      "run_name": "Deploy",
-      "branch": "v1.4.0",
-      "commit_msg": "v1.4.0 - Fix Playwright timeout loop",
-      "commit_date": "2026-03-09 17:33",
-      "duration": "0s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-ops",
@@ -361,12 +331,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22873683950",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22875900761",
       "run_name": "Flash Research Scraper",
       "branch": "main",
       "commit_msg": "Flash Research Scraper",
-      "commit_date": "2026-03-09 17:38",
-      "duration": "0s",
+      "commit_date": "2026-03-09 18:36",
+      "duration": "4s",
       "workflow": "Flash Research Scraper"
     },
     {
@@ -551,6 +521,21 @@
       "workflow": "Deploy"
     },
     {
+      "name": "sc-dilution-scraper",
+      "url": "https://github.com/algojj/sc-dilution-scraper",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22871935954",
+      "run_name": "Deploy",
+      "branch": "v1.6.2",
+      "commit_msg": "v1.6.2 - Prevent empty scrapes overwriting data + WAF token auto-refresh",
+      "commit_date": "2026-03-09 16:53",
+      "duration": "1h 41m",
+      "workflow": "Deploy"
+    },
+    {
       "name": "sc-gateway",
       "url": "https://github.com/algojj/sc-gateway",
       "private": true,
@@ -608,6 +593,21 @@
       "commit_msg": "v3.26.3 - Pass filing detail fields through DD pipeline",
       "commit_date": "2026-03-09 02:36",
       "duration": "3m 12s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-ms-flash",
+      "url": "https://github.com/algojj/sc-ms-flash",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-ms-flash/actions/runs/22873513501",
+      "run_name": "Deploy",
+      "branch": "v1.4.0",
+      "commit_msg": "v1.4.0 - Fix Playwright timeout loop",
+      "commit_date": "2026-03-09 17:33",
+      "duration": "1h 1m",
       "workflow": "Deploy"
     },
     {
