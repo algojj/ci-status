@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-10 14:34:22",
+  "timestamp": "2026-03-10 15:29:49",
   "total": 60,
   "counts": {
     "failure": 10,
-    "running": 3,
+    "running": 1,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 44
+    "success": 46
   },
   "repos": [
     {
@@ -166,43 +166,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22915795972",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22918094769",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-10 14:33",
+      "commit_date": "2026-03-10 15:29",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-dilution-scraper",
-      "url": "https://github.com/algojj/sc-dilution-scraper",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22915207140",
-      "run_name": "Deploy",
-      "branch": "v1.6.14",
-      "commit_msg": "v1.6.14 - 1-hour scrape cache",
-      "commit_date": "2026-03-10 14:19",
-      "duration": "14m 0s",
-      "workflow": "Deploy"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22915232341",
-      "run_name": "Deploy",
-      "branch": "v3.28.58",
-      "commit_msg": "v3.28.58 - DT cache + Refresh DT UX",
-      "commit_date": "2026-03-10 14:20",
-      "duration": "0s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-algo-bht",
@@ -368,6 +338,36 @@
       "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
       "commit_date": "2026-03-03 11:23",
       "duration": "7m 11s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-dilution-scraper",
+      "url": "https://github.com/algojj/sc-dilution-scraper",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22915207140",
+      "run_name": "Deploy",
+      "branch": "v1.6.14",
+      "commit_msg": "v1.6.14 - 1-hour scrape cache",
+      "commit_date": "2026-03-10 14:19",
+      "duration": "20m 25s",
+      "workflow": "Deploy"
+    },
+    {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22915232341",
+      "run_name": "Deploy",
+      "branch": "v3.28.58",
+      "commit_msg": "v3.28.58 - DT cache + Refresh DT UX",
+      "commit_date": "2026-03-10 14:20",
+      "duration": "19m 56s",
       "workflow": "Deploy"
     },
     {
@@ -692,12 +692,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22914303843",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22916690098",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-10 13:58",
-      "duration": "10m 35s",
+      "commit_date": "2026-03-10 14:55",
+      "duration": "11m 9s",
       "workflow": "DilutionTracker Scraper"
     },
     {
