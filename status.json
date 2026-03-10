@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-10 17:00:05",
+  "timestamp": "2026-03-10 17:47:16",
   "total": 60,
   "counts": {
     "failure": 10,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 2,
-    "success": 46
+    "success": 45
   },
   "repos": [
     {
@@ -166,13 +166,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22921726736",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22923545001",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-10 16:59",
+      "commit_date": "2026-03-10 17:46",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22923247423",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-10 17:38",
+      "duration": "4s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-algo-bht",
@@ -684,21 +699,6 @@
       "commit_date": "2026-03-10 01:29",
       "duration": "1h 13m",
       "workflow": "Deploy"
-    },
-    {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22921064370",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-10 16:42",
-      "duration": "10m 32s",
-      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-polygon-proxy",
