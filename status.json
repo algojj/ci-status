@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-10 20:59:37",
-  "total": 60,
+  "timestamp": "2026-03-11 08:38:37",
+  "total": 61,
   "counts": {
     "failure": 10,
     "running": 1,
     "cancelled": 1,
-    "no_ci": 2,
+    "no_ci": 3,
     "success": 46
   },
   "repos": [
@@ -166,12 +166,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22929810755",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22950703089",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-10 20:59",
-      "duration": "4s",
+      "commit_date": "2026-03-11 08:38",
+      "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -201,6 +201,14 @@
       "name": "sc-workflows",
       "url": "https://github.com/algojj/sc-workflows",
       "private": false,
+      "status_key": "no_ci",
+      "status_label": "Sin CI",
+      "status_icon": "\u26a0\ufe0f"
+    },
+    {
+      "name": "web-proxy",
+      "url": "https://github.com/algojj/web-proxy",
+      "private": true,
       "status_key": "no_ci",
       "status_label": "Sin CI",
       "status_icon": "\u26a0\ufe0f"
@@ -347,12 +355,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22915207140",
+      "run_url": "https://github.com/algojj/sc-dilution-scraper/actions/runs/22936070342",
       "run_name": "Deploy",
-      "branch": "v1.6.14",
-      "commit_msg": "v1.6.14 - 1-hour scrape cache",
-      "commit_date": "2026-03-10 14:19",
-      "duration": "20m 25s",
+      "branch": "v1.6.20",
+      "commit_msg": "v1.6.20 - Proxy support",
+      "commit_date": "2026-03-11 01:00",
+      "duration": "3m 43s",
       "workflow": "Deploy"
     },
     {
@@ -587,12 +595,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-polygon/actions/runs/22150245039",
+      "run_url": "https://github.com/algojj/sc-ms-polygon/actions/runs/22934526203",
       "run_name": "Deploy",
-      "branch": "v2.2.0",
-      "commit_msg": "v2.2.0 - Direct Polygon WS mode",
-      "commit_date": "2026-02-18 14:24",
-      "duration": "43s",
+      "branch": "v2.2.1",
+      "commit_msg": "v2.2.1 - BEAT WS BLIND fix",
+      "commit_date": "2026-03-10 23:57",
+      "duration": "1m 52s",
       "workflow": "Deploy"
     },
     {
@@ -692,12 +700,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22929041312",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22938416397",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-10 20:32",
-      "duration": "11m 6s",
+      "commit_date": "2026-03-11 02:33",
+      "duration": "11m 5s",
       "workflow": "DilutionTracker Scraper"
     },
     {
