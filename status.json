@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-11 09:03:10",
+  "timestamp": "2026-03-11 10:39:30",
   "total": 61,
   "counts": {
     "failure": 10,
@@ -166,11 +166,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22951602407",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22955412667",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 09:02",
+      "commit_date": "2026-03-11 10:39",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
     },
@@ -490,12 +490,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22888725372",
+      "run_url": "https://github.com/algojj/sc-ms-health/actions/runs/22954613036",
       "run_name": "Deploy",
-      "branch": "v3.23.1",
-      "commit_msg": "v3.23.1 - K8s pod auto-discovery",
-      "commit_date": "2026-03-10 02:34",
-      "duration": "1h 26m",
+      "branch": "v3.23.2",
+      "commit_msg": "v3.23.2 \u2014 Fix webhook-service port",
+      "commit_date": "2026-03-11 10:20",
+      "duration": "49s",
       "workflow": "Deploy"
     },
     {
