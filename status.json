@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-11 20:00:57",
+  "timestamp": "2026-03-11 20:43:08",
   "total": 61,
   "counts": {
     "failure": 10,
-    "running": 1,
+    "running": 2,
     "no_ci": 3,
-    "success": 47
+    "success": 46
   },
   "repos": [
     {
@@ -165,13 +165,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22978477523",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22979706985",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 20:00",
+      "commit_date": "2026-03-11 20:42",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22979667361",
+      "run_name": "Deploy",
+      "branch": "v3.32.0",
+      "commit_msg": "v3.32.0 \u2014 Action-Price Phase D (AI reasoning)",
+      "commit_date": "2026-03-11 20:41",
+      "duration": "59s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-database",
@@ -361,21 +376,6 @@
       "commit_date": "2026-03-11 11:03",
       "duration": "25s",
       "workflow": "DT Session Inject"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22978327436",
-      "run_name": "Deploy",
-      "branch": "v3.29.0",
-      "commit_msg": "v3.29.0",
-      "commit_date": "2026-03-11 19:55",
-      "duration": "2m 22s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-journal",
@@ -699,12 +699,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22977544881",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22979379295",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-11 19:30",
-      "duration": "11m 5s",
+      "commit_date": "2026-03-11 20:31",
+      "duration": "10m 51s",
       "workflow": "DilutionTracker Scraper"
     },
     {
