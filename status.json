@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-11 19:43:41",
+  "timestamp": "2026-03-11 20:00:57",
   "total": 61,
   "counts": {
     "failure": 10,
@@ -165,11 +165,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22977941087",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22978477523",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 19:43",
+      "commit_date": "2026-03-11 20:00",
       "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
@@ -369,12 +369,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22974031415",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22978327436",
       "run_name": "Deploy",
-      "branch": "v3.28.78",
-      "commit_msg": "v3.28.78",
-      "commit_date": "2026-03-11 17:55",
-      "duration": "11m 59s",
+      "branch": "v3.29.0",
+      "commit_msg": "v3.29.0",
+      "commit_date": "2026-03-11 19:55",
+      "duration": "2m 22s",
       "workflow": "Deploy"
     },
     {
@@ -894,12 +894,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22884893600",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22978249698",
       "run_name": "Release",
-      "branch": "v1.14.0",
-      "commit_msg": "feat: circuit breaker SPY probe, TRF fallback, R-multiples, WATCH loc\u2026",
-      "commit_date": "2026-03-09 23:54",
-      "duration": "4m 7s",
+      "branch": "v1.15.0",
+      "commit_msg": "feat: archive closed positions to trade_history collection + R increa\u2026",
+      "commit_date": "2026-03-11 19:53",
+      "duration": "3m 59s",
       "workflow": "Release"
     }
   ]
