@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-03-11 13:34:54",
+  "timestamp": "2026-03-11 14:35:52",
   "total": 61,
   "counts": {
     "failure": 10,
-    "running": 1,
+    "running": 2,
     "cancelled": 1,
     "no_ci": 3,
-    "success": 46
+    "success": 45
   },
   "repos": [
     {
@@ -166,13 +166,28 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22963386964",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22966011726",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 13:34",
+      "commit_date": "2026-03-11 14:35",
       "duration": "5s",
       "workflow": "CI Status Dashboard"
+    },
+    {
+      "name": "sc-ops",
+      "url": "https://github.com/algojj/sc-ops",
+      "private": true,
+      "status_key": "running",
+      "status_label": "Running",
+      "status_icon": "\ud83d\udd04",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22965692107",
+      "run_name": "DilutionTracker Scraper",
+      "branch": "main",
+      "commit_msg": "DilutionTracker Scraper",
+      "commit_date": "2026-03-11 14:27",
+      "duration": "3s",
+      "workflow": "DilutionTracker Scraper"
     },
     {
       "name": "sc-algo-bht",
@@ -370,12 +385,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22915232341",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22965554939",
       "run_name": "Deploy",
-      "branch": "v3.28.58",
-      "commit_msg": "v3.28.58 - DT cache + Refresh DT UX",
-      "commit_date": "2026-03-10 14:20",
-      "duration": "19m 56s",
+      "branch": "v3.28.62",
+      "commit_msg": "v3.28.62 - Fix Dilutracker cache",
+      "commit_date": "2026-03-11 14:24",
+      "duration": "2m 22s",
       "workflow": "Deploy"
     },
     {
@@ -694,21 +709,6 @@
       "workflow": "Deploy"
     },
     {
-      "name": "sc-ops",
-      "url": "https://github.com/algojj/sc-ops",
-      "private": true,
-      "status_key": "success",
-      "status_label": "Passing",
-      "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22962429448",
-      "run_name": "DilutionTracker Scraper",
-      "branch": "main",
-      "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-11 13:12",
-      "duration": "11m 58s",
-      "workflow": "DilutionTracker Scraper"
-    },
-    {
       "name": "sc-polygon-proxy",
       "url": "https://github.com/algojj/sc-polygon-proxy",
       "private": true,
@@ -850,12 +850,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/22962823687",
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22965860754",
       "run_name": "Deploy",
-      "branch": "v3.12.0",
-      "commit_msg": "v3.12.0 \u2014 DT Filings on DD Page",
-      "commit_date": "2026-03-11 13:21",
-      "duration": "1m 59s",
+      "branch": "v3.12.2",
+      "commit_msg": "v3.12.2 - Fix Dilutracker data mapping",
+      "commit_date": "2026-03-11 14:31",
+      "duration": "1m 36s",
       "workflow": "Deploy"
     },
     {
