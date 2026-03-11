@@ -1,12 +1,11 @@
 {
-  "timestamp": "2026-03-11 14:35:52",
+  "timestamp": "2026-03-11 15:34:47",
   "total": 61,
   "counts": {
     "failure": 10,
     "running": 2,
-    "cancelled": 1,
     "no_ci": 3,
-    "success": 45
+    "success": 46
   },
   "repos": [
     {
@@ -166,12 +165,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22966011726",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22968456403",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 14:35",
-      "duration": "5s",
+      "commit_date": "2026-03-11 15:34",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -181,28 +180,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22965692107",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/22968244260",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-11 14:27",
+      "commit_date": "2026-03-11 15:29",
       "duration": "3s",
       "workflow": "DilutionTracker Scraper"
-    },
-    {
-      "name": "sc-algo-bht",
-      "url": "https://github.com/algojj/sc-algo-bht",
-      "private": true,
-      "status_key": "cancelled",
-      "status_label": "Cancelled",
-      "status_icon": "\u23f9\ufe0f",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22627301129",
-      "run_name": "Deploy",
-      "branch": "v1.1.1",
-      "commit_msg": "v1.1.1 - Fix EXPIRED status classification",
-      "commit_date": "2026-03-03 11:23",
-      "duration": "43m 12s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-database",
@@ -287,6 +271,21 @@
       "commit_date": "2026-02-07 01:53",
       "duration": "18s",
       "workflow": "Proof HTML"
+    },
+    {
+      "name": "sc-algo-bht",
+      "url": "https://github.com/algojj/sc-algo-bht",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22967577851",
+      "run_name": "Deploy",
+      "branch": "v3.27.8",
+      "commit_msg": "v3.27.8 \u2014 post-WIN cooldown + entry price gap filter",
+      "commit_date": "2026-03-11 15:12",
+      "duration": "1m 21s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-algo-climax",
@@ -385,12 +384,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22965554939",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22966942136",
       "run_name": "Deploy",
-      "branch": "v3.28.62",
-      "commit_msg": "v3.28.62 - Fix Dilutracker cache",
-      "commit_date": "2026-03-11 14:24",
-      "duration": "2m 22s",
+      "branch": "v3.28.63",
+      "commit_msg": "v3.28.63 - DD cache TTL 2min",
+      "commit_date": "2026-03-11 14:57",
+      "duration": "4m 16s",
       "workflow": "Deploy"
     },
     {
@@ -460,12 +459,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22839938358",
+      "run_url": "https://github.com/algojj/sc-ms-dd/actions/runs/22966941690",
       "run_name": "Deploy",
-      "branch": "v3.26.3",
-      "commit_msg": "v3.26.3 - Pass filing detail fields through DD pipeline",
-      "commit_date": "2026-03-09 02:36",
-      "duration": "3m 12s",
+      "branch": "v3.26.4",
+      "commit_msg": "v3.26.4 - Cache TTL 2min + protect data",
+      "commit_date": "2026-03-11 14:57",
+      "duration": "4m 8s",
       "workflow": "Deploy"
     },
     {
@@ -850,12 +849,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-web/actions/runs/22965860754",
+      "run_url": "https://github.com/algojj/sc-web/actions/runs/22966544250",
       "run_name": "Deploy",
-      "branch": "v3.12.2",
-      "commit_msg": "v3.12.2 - Fix Dilutracker data mapping",
-      "commit_date": "2026-03-11 14:31",
-      "duration": "1m 36s",
+      "branch": "v3.12.4",
+      "commit_msg": "v3.12.4 - Warrants + ATM as matching tables",
+      "commit_date": "2026-03-11 14:47",
+      "duration": "1m 38s",
       "workflow": "Deploy"
     },
     {
