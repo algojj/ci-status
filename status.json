@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-03-11 20:43:08",
+  "timestamp": "2026-03-11 21:01:13",
   "total": 61,
   "counts": {
     "failure": 10,
-    "running": 2,
+    "running": 1,
     "no_ci": 3,
-    "success": 46
+    "success": 47
   },
   "repos": [
     {
@@ -165,28 +165,13 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/22979706985",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/22980204896",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-11 20:42",
-      "duration": "4s",
+      "commit_date": "2026-03-11 21:00",
+      "duration": "3s",
       "workflow": "CI Status Dashboard"
-    },
-    {
-      "name": "sc-gateway",
-      "url": "https://github.com/algojj/sc-gateway",
-      "private": true,
-      "status_key": "running",
-      "status_label": "Running",
-      "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22979667361",
-      "run_name": "Deploy",
-      "branch": "v3.32.0",
-      "commit_msg": "v3.32.0 \u2014 Action-Price Phase D (AI reasoning)",
-      "commit_date": "2026-03-11 20:41",
-      "duration": "59s",
-      "workflow": "Deploy"
     },
     {
       "name": "sc-database",
@@ -376,6 +361,21 @@
       "commit_date": "2026-03-11 11:03",
       "duration": "25s",
       "workflow": "DT Session Inject"
+    },
+    {
+      "name": "sc-gateway",
+      "url": "https://github.com/algojj/sc-gateway",
+      "private": true,
+      "status_key": "success",
+      "status_label": "Passing",
+      "status_icon": "\u2705",
+      "run_url": "https://github.com/algojj/sc-gateway/actions/runs/22980072785",
+      "run_name": "Deploy",
+      "branch": "v3.33.0",
+      "commit_msg": "v3.33.0 \u2014 AI Trade Thesis on DD page",
+      "commit_date": "2026-03-11 20:55",
+      "duration": "3m 9s",
+      "workflow": "Deploy"
     },
     {
       "name": "sc-journal",
