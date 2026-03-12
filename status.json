@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-12 14:37:00",
+  "timestamp": "2026-03-12 15:34:03",
   "total": 61,
   "counts": {
     "failure": 10,
@@ -165,12 +165,12 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/23015479662",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/23017858317",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-12 14:36",
-      "duration": "5s",
+      "commit_date": "2026-03-12 15:33",
+      "duration": "4s",
       "workflow": "CI Status Dashboard"
     },
     {
@@ -699,12 +699,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/23013975398",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/23016894280",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-12 14:01",
-      "duration": "11m 25s",
+      "commit_date": "2026-03-12 15:09",
+      "duration": "11m 41s",
       "workflow": "DilutionTracker Scraper"
     },
     {
@@ -894,12 +894,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/22978249698",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/23015885344",
       "run_name": "Release",
-      "branch": "v1.15.0",
-      "commit_msg": "feat: archive closed positions to trade_history collection + R increa\u2026",
-      "commit_date": "2026-03-11 19:53",
-      "duration": "3m 59s",
+      "branch": "v1.15.1",
+      "commit_msg": "fix: race condition causing position flip on TP preload fill",
+      "commit_date": "2026-03-12 14:45",
+      "duration": "3m 2s",
       "workflow": "Release"
     }
   ]
