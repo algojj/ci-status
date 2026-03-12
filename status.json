@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-03-12 17:53:04",
+  "timestamp": "2026-03-12 18:39:19",
   "total": 61,
   "counts": {
     "failure": 10,
@@ -165,11 +165,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/ci-status/actions/runs/23023340286",
+      "run_url": "https://github.com/algojj/ci-status/actions/runs/23025169309",
       "run_name": "CI Status Dashboard",
       "branch": "main",
       "commit_msg": "CI Status Dashboard",
-      "commit_date": "2026-03-12 17:52",
+      "commit_date": "2026-03-12 18:38",
       "duration": "3s",
       "workflow": "CI Status Dashboard"
     },
@@ -180,11 +180,11 @@
       "status_key": "running",
       "status_label": "Running",
       "status_icon": "\ud83d\udd04",
-      "run_url": "https://github.com/algojj/sc-ops/actions/runs/23023183735",
+      "run_url": "https://github.com/algojj/sc-ops/actions/runs/23025109329",
       "run_name": "DilutionTracker Scraper",
       "branch": "main",
       "commit_msg": "DilutionTracker Scraper",
-      "commit_date": "2026-03-12 17:48",
+      "commit_date": "2026-03-12 18:37",
       "duration": "3s",
       "workflow": "DilutionTracker Scraper"
     },
@@ -279,12 +279,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/22986828396",
+      "run_url": "https://github.com/algojj/sc-algo-bht/actions/runs/23024919580",
       "run_name": "Deploy",
-      "branch": "v3.27.9",
-      "commit_msg": "v3.27.9",
-      "commit_date": "2026-03-12 01:38",
-      "duration": "1h 5m",
+      "branch": "v3.27.10",
+      "commit_msg": "v3.27.10",
+      "commit_date": "2026-03-12 18:32",
+      "duration": "2m 55s",
       "workflow": "Deploy"
     },
     {
@@ -894,12 +894,12 @@
       "status_key": "success",
       "status_label": "Passing",
       "status_icon": "\u2705",
-      "run_url": "https://github.com/algojj/signal-executor/actions/runs/23015885344",
+      "run_url": "https://github.com/algojj/signal-executor/actions/runs/23024266968",
       "run_name": "Release",
-      "branch": "v1.15.1",
-      "commit_msg": "fix: race condition causing position flip on TP preload fill",
-      "commit_date": "2026-03-12 14:45",
-      "duration": "3m 2s",
+      "branch": "v1.15.2",
+      "commit_msg": "fix: dispatch %OrderAct events from TCP response data, not just pre-d\u2026",
+      "commit_date": "2026-03-12 18:14",
+      "duration": "2m 40s",
       "workflow": "Release"
     }
   ]
